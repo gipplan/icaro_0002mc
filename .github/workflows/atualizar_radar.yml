@@ -1,0 +1,47 @@
+name: Radar I.C.A.R.O. - iFood
+
+on:
+  workflow_dispatch:
+    inputs:
+      marca_alvo:
+        description: 'Marca ou tema para busca prioritária'
+        required: false
+        default: ''
+  schedule:
+    - cron: '45 9 * * *' # Roda às 06:45 BRT para o JSON estar pronto às 07:00
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar o Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Instalar dependências
+        run: |
+          python -m pip install --upgrade pip
+          pip install google-genai requests
+
+      - name: Executar o motor I.C.A.R.O. (Gemini Native Search)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MARCA_ALVO: ${{ github.event.inputs.marca_alvo }}
+        run: python gerar_oportunidades.py
+
+      - name: Commitar e enviar alterações
+        run: |
+          git config --global user.name "I.C.A.R.O. Bot"
+          git config --global user.email "bot@icaro-ifood.com"
+          git add oportunidades.json
+          git commit -m "🤖 Radar Atualizado: Novas pautas iFood capturadas via Gemini Grounding" || echo "Nenhuma mudança para commitar"
+          git pull --rebase origin main
+          git push
