@@ -1,4 +1,4 @@
-name: Radar I.C.A.R.O. - iFood
+name: Radar I.C.A.R.O. - Arcos Dorados
 
 on:
   workflow_dispatch:
@@ -40,8 +40,8 @@ jobs:
       - name: Commitar e enviar alterações
         run: |
           git config --global user.name "I.C.A.R.O. Bot"
-          git config --global user.email "bot@icaro-ifood.com"
+          git config --global user.email "bot@icaro-arcosdorados.com"
           git add oportunidades.json
-          git commit -m "🤖 Radar Atualizado: Novas pautas iFood capturadas via Gemini Grounding" || echo "Nenhuma mudança para commitar"
+          git commit -m "🤖 Radar Atualizado: Novas pautas Arcos Dorados capturadas via Gemini Grounding" || echo "Nenhuma mudança para commitar"
           git pull --rebase origin main
           git push
