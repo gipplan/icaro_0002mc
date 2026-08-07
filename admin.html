@@ -1,198 +1,225 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="h-full bg-[#F4F5F7]">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel de Gestão - I.C.A.R.O. | iFood Corporate PR</title>
-    <!-- Google Fonts: Lora (Serif) & Plus Jakarta Sans (Sans-serif) -->
+    <title>Í.C.A.R.O. | Admin Panel - Arcos Dorados</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <script>
         tailwind.config = {
             theme: {
                 extend: {
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
                     colors: {
-                        ifood: {
-                            red: '#EA1D2C',      // Vermelho oficial iFood
-                            chumbo: '#575756',   // Chumbo corporativo
-                            dark: '#111111'      // Preto de apoio
+                        mcd: {
+                            red: '#DA291C',
+                            'red-dark': '#B01D13',
+                            'red-light': '#FFEDEC',
+                            yellow: '#FFC72C',
+                            dark: '#27251F',
+                            gray: '#65676B',
+                            bg: '#F4F5F7'
                         }
                     }
                 }
             }
         }
     </script>
-
     <style>
-        .font-editorial { font-family: 'Fraunces', Georgia, serif; }
-        .font-sans-custom { font-family: 'Montserrat', sans-serif; }
-        /* Transição suave para os botões de admin */
-        .admin-controls { opacity: 0; transition: opacity 0.2s ease-in-out; }
-        article:hover .admin-controls { opacity: 1; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
     </style>
 </head>
-<body class="bg-stone-50 text-ifood-dark font-sans-custom min-h-screen flex flex-col justify-between relative">
+<body class="min-h-full flex flex-col text-[#27251F] antialiased bg-[#F4F5F7]">
 
-    <!-- Header Editorial Compacto (Modo Admin) -->
-    <header class="relative py-6 px-8 shadow-sm bg-stone-900 border-b-4 border-ifood-red z-30">
-        <div class="max-w-6xl mx-auto flex justify-between items-center relative z-10">
+    <!-- NAVBAR ADMIN -->
+    <header class="sticky top-0 z-40 bg-mcd-dark border-b border-gray-800 shadow-md">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
             <div class="flex items-center gap-4">
-                <img src="logo.png" alt="iFood PR" class="h-8 object-contain brightness-0 invert" onerror="this.style.display='none'; document.getElementById('fallbackTitle').classList.remove('hid[...]">
-                <span id="fallbackTitle" class="hidden text-sm font-bold text-white tracking-widest uppercase font-sans-custom">iFood <span class="text-ifood-red">PR</span></span>
-                <div class="h-6 w-px bg-stone-700"></div>
-                <h1 class="text-xl font-bold font-editorial text-white tracking-widest uppercase">I.C.A.R.O. <span class="text-stone-400 font-sans-custom text-xs font-normal ml-2">Painel de Curado[...]</h1>
+                <a href="index.html" class="flex items-center gap-3 text-white hover:text-mcd-yellow transition-colors" title="Voltar ao Dashboard">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <div class="h-6 w-[1px] bg-gray-700 hidden sm:block"></div>
+                <div class="flex items-center gap-2">
+                    <span class="bg-mcd-yellow text-mcd-dark font-bold text-xs px-2.5 py-1 rounded-full uppercase tracking-wider">Í.C.A.R.O. ADMIN</span>
+                    <span class="text-xs font-semibold text-gray-400 hidden sm:inline-block">Arcos Dorados Control Panel</span>
+                </div>
             </div>
             
-            <a href="index.html" class="text-xs font-bold text-white hover:text-ifood-red transition-colors tracking-widest uppercase border border-stone-700 px-4 py-2 rounded">
-                Voltar ao Radar ↗
-            </a>
+            <div class="flex items-center gap-3">
+                <span class="flex items-center gap-2 text-[10px] font-bold text-emerald-400 uppercase tracking-wider bg-emerald-400/10 px-3 py-1.5 rounded-full border border-emerald-400/20">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Sistema Online
+                </span>
+            </div>
         </div>
     </header>
 
-    <!-- Sub-Header Técnico -->
-    <div class="max-w-6xl mx-auto px-4 mt-8 w-full">
-        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-stone-300 pb-2 gap-4">
-            <span class="text-xs font-bold tracking-widest text-ifood-chumbo uppercase font-sans-custom">Gerenciamento da Base de Dados</span>
-            <span class="text-xs font-bold tracking-widest text-stone-400 uppercase font-sans-custom">Oportunidades Carregadas: <span id="contadorCards" class="text-ifood-dark">0</span></span>
+    <!-- ADMIN CONTENT -->
+    <main class="flex-1 max-w-5xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        
+        <div class="mb-8">
+            <h1 class="text-2xl font-extrabold text-gray-900 tracking-tight mb-2">Painel de Controle Í.C.A.R.O.</h1>
+            <p class="text-sm text-gray-600">Central de comandos para disparo manual dos motores de inteligência e varredura da Arcos Dorados.</p>
         </div>
-    </div>
 
-    <!-- Container Principal (Briefing Grid Editável) -->
-    <main class="max-w-6xl mx-auto px-4 py-8 w-full flex-grow">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="timelineContainer">
-            <p class="text-stone-400 italic text-center col-span-full py-12">Carregando curadoria de inteligência para edição...</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- CARD 1: VARREDURA WEB -->
+            <div class="bg-white rounded-3xl border border-gray-200 shadow-sm p-6 flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-mcd-red-light to-transparent opacity-50 rounded-bl-full pointer-events-none transition-transform group-hover:scale-110"></div>
+                
+                <div>
+                    <div class="w-12 h-12 bg-mcd-red-light text-mcd-red rounded-2xl flex items-center justify-center text-xl mb-4 border border-red-100">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <h2 class="text-lg font-bold text-gray-900 mb-2">Forçar Varredura Web</h2>
+                    <p class="text-xs text-gray-600 leading-relaxed mb-6">
+                        Aciona o script <code class="bg-gray-100 px-1.5 py-0.5 rounded text-mcd-red font-mono text-[10px]">gerar_oportunidades.py</code>. 
+                        O Í.C.A.R.O. fará uma varredura imediata no Google buscando por novas notícias da Arcos Dorados, concorrentes e setor QSR, classificando-as no JSON.
+                    </p>
+                </div>
+
+                <div class="pt-4 border-t border-gray-100">
+                    <button onclick="dispararVarreduraWeb()" id="btn-varredura" class="w-full py-3 rounded-xl text-xs font-bold text-white bg-mcd-dark hover:bg-black transition-all flex items-center justify-center gap-2 shadow-md">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>Iniciar Motor de Busca</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- CARD 2: CLIPPING BOXNET -->
+            <div class="bg-white rounded-3xl border border-gray-200 shadow-sm p-6 flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-amber-50 to-transparent opacity-80 rounded-bl-full pointer-events-none transition-transform group-hover:scale-110"></div>
+                
+                <div>
+                    <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-xl mb-4 border border-amber-100">
+                        <i class="fa-solid fa-newspaper"></i>
+                    </div>
+                    <h2 class="text-lg font-bold text-gray-900 mb-2">Processar Clipping Boxnet</h2>
+                    <p class="text-xs text-gray-600 leading-relaxed mb-4">
+                        Aciona o robô para ler, analisar e extrair inteligência tática de um relatório da Boxnet fornecido pela agência.
+                    </p>
+                    
+                    <div class="mb-4 relative z-10">
+                        <label class="block text-[10px] font-bold text-gray-500 uppercase tracking-wider mb-1.5">URL do Relatório Boxnet</label>
+                        <input type="url" id="input-url-clipping" placeholder="https://bookweb.boxnet.com.br/..." class="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-xs font-medium focus:outline-none focus:border-mcd-yellow focus:ring-1 focus:ring-mcd-yellow transition-all">
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-gray-100 relative z-10">
+                    <button onclick="dispararAnaliseClipping()" id="btn-processar-clipping" class="w-full py-3 rounded-xl text-xs font-bold text-mcd-dark bg-mcd-yellow hover:bg-yellow-500 transition-all flex items-center justify-center gap-2 shadow-md">
+                        <i class="fa-solid fa-file-import"></i>
+                        <span>Extrair Inteligência</span>
+                    </button>
+                </div>
+            </div>
+
         </div>
+
+        <!-- CONFIGURAÇÕES ALERT -->
+        <div class="mt-8 bg-blue-50 border border-blue-100 rounded-2xl p-5 flex items-start gap-4">
+            <div class="text-blue-500 mt-0.5"><i class="fa-solid fa-circle-info text-lg"></i></div>
+            <div>
+                <h4 class="text-sm font-bold text-blue-900 mb-1">Status de Conexão GitHub Actions</h4>
+                <p class="text-xs text-blue-800/80 leading-relaxed">
+                    Certifique-se de que as variáveis <code class="font-mono bg-blue-100 px-1 rounded">GITHUB_PAT</code>, <code class="font-mono bg-blue-100 px-1 rounded">REPO_OWNER</code> e <code class="font-mono bg-blue-100 px-1 rounded">REPO_NAME</code> estão corretamente configuradas no código-fonte deste painel para que os comandos sejam enviados à infraestrutura do repositório.
+                </p>
+            </div>
+        </div>
+
     </main>
 
-    <!-- Rodapé -->
-    <footer class="bg-white border-t border-stone-200 py-6 px-8 text-center shadow-sm">
-        <div class="max-w-6xl mx-auto text-xs text-ifood-chumbo tracking-wider">
-            <p>Modo Administrador | I.C.A.R.O. Engine - iFood Edition</p>
-        </div>
-    </footer>
-
-    <!-- BOTÃO FIXO DE EXPORTAÇÃO -->
-    <button onclick="exportarJSON()" class="fixed bottom-6 right-6 bg-ifood-red hover:bg-red-700 text-white font-bold py-4 px-6 rounded-full shadow-2xl transition-transform hover:scale-105 z-50 fl[...]">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16[...]"></path></svg>
-        Salvar & Exportar JSON
-    </button>
-
+    <!-- SCRIPT DE INTEGRAÇÃO GITHUB -->
     <script>
-        let dadosOportunidades = [];
+        // ==========================================
+        // CONFIGURAÇÕES DO GITHUB (EDITAR AQUI)
+        // ==========================================
+        const GITHUB_PAT = "ghp_" + "COLE_O_RESTANTE_DO_SEU_TOKEN_AQUI"; 
+        const REPO_OWNER = "SEU_USUARIO_AQUI"; // Ex: gipplan
+        const REPO_NAME = "NOME_DO_REPO_MCDONALDS"; // Ex: icaro_mcdonalds
 
-        // Hashing rápido de string para geração consistente de sementes (fallback)
-        function gerarHash(str) {
-            let hash = 0;
-            for (let i = 0; i < str.length; i++) {
-                const char = str.charCodeAt(i);
-                hash = (hash << 5) - hash + char;
-                hash = hash & hash; 
-            }
-            return hash.toString();
-        }
+        // 1. FUNÇÃO: DISPARAR VARREDURA WEB (gerar_oportunidades.py)
+        async function dispararVarreduraWeb() {
+            const btn = document.getElementById('btn-varredura');
+            
+            if(!confirm("Deseja iniciar uma nova varredura web? Este processo pode levar alguns minutos.")) return;
 
-        // Função para converter string de data (DD/MM/AAAA) em Date comparável
-        function converterDataParaISODate(dataStr) {
-            if (!dataStr) return new Date(0); // Data muito antiga como fallback
-            const partes = dataStr.split('/');
-            if (partes.length === 3) {
-                // Formato ISO: AAAA-MM-DD
-                return new Date(`${partes[2]}-${partes[1]}-${partes[0]}T00:00:00`);
-            }
-            return new Date(0);
-        }
+            btn.disabled = true;
+            btn.innerHTML = `<i class="fa-solid fa-circle-notch animate-spin"></i> <span>Executando Varredura...</span>`;
 
-        document.addEventListener("DOMContentLoaded", () => {
-            // Adicionado parâmetro de tempo para forçar atualização e ignorar o cache
-            fetch(`oportunidades.json?t=${new Date().getTime()}`)
-                .then(response => {
-                    if (!response.ok) throw new Error('Arquivo JSON inacessível.');
-                    return response.json();
-                })
-                .then(dados => {
-                    // ORDENAÇÃO: Organiza os dados da data mais recente para a mais antiga
-                    dados.sort((a, b) => {
-                        const dataA = converterDataParaISODate(a.data);
-                        const dataB = converterDataParaISODate(b.data);
-                        return dataB - dataA; // Retorna negativo se B for mais recente
-                    });
-
-                    dadosOportunidades = dados;
-                    renderizarTimelineAdmin(dadosOportunidades);
-                })
-                .catch(err => {
-                    console.error("Erro ao carregar banco:", err);
-                    document.getElementById('timelineContainer').innerHTML = `<p class="text-red-500 italic text-center col-span-full py-12">Erro ao carregar oportunidades.json.</p>`;
+            try {
+                // OBS: Ajuste o nome do workflow (.yml) caso o nome do arquivo da action de varredura seja diferente.
+                // Exemplo: 'main.yml' ou 'varredura.yml'
+                const response = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/main.yml/dispatches`, {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/vnd.github+json',
+                        'Authorization': `Bearer ${GITHUB_PAT}`,
+                        'X-GitHub-Api-Version': '2022-11-28'
+                    },
+                    body: JSON.stringify({ ref: 'main' })
                 });
-        });
 
-        function limparMarca(nome) {
-            return nome.replace(/\s*\(.*?\)\s*/g, '').trim();
-        }
-
-        // --- ALGORITMOS DE TEXTO (Iguais aos do Index) ---
-        function separarContextoERecomendacao(texto) {
-            if (!texto) return { fato: "", rec: "" };
-            let partes = texto.split(/\.(?=\s)/);
-            if (partes.length === 1) {
-                const regexGerundio = /,\s*(mostrando|abrindo|exigindo|gerando|visando|propondo|direcionando|demandando|sinalizando|reforçando|consolidando|oferecendo|permitindo|ajudando|prepara[...];
-                const match = texto.match(regexGerundio);
-                if (match) {
-                    const index = texto.indexOf(match[0]);
-                    const fato = texto.substring(0, index).trim() + ".";
-                    const gerundioCapitalizado = match[1].charAt(0).toUpperCase() + match[1].slice(1);
-                    const rec = gerundioCapitalizado + " " + texto.substring(index + match[0].length).trim();
-                    return { fato, rec };
+                if (response.ok || response.status === 204) {
+                    alert('Sucesso! Motor Í.C.A.R.O. acionado. O Dashboard será atualizado com as novas pautas em alguns minutos.');
+                } else {
+                    throw new Error(`Erro API: Status ${response.status}`);
                 }
-                return { fato: partes[0].trim(), rec: "" };
+            } catch (erro) {
+                console.error(erro);
+                alert('Falha ao acionar a Action. Verifique seu GITHUB_PAT e o nome do repositório/workflow no código fonte.');
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = `<i class="fa-solid fa-bolt"></i> <span>Iniciar Motor de Busca</span>`;
             }
-            const fato = partes.shift() + ".";
-            const rec = partes.join(". ") + (partes.length > 0 && !texto.endsWith(".") ? "." : "");
-            return { fato: fato.trim(), rec: rec.trim() };
         }
 
-        function mesclarFatoERecomendacao(fato, rec) {
-            if (!rec || rec.trim() === "") return fato;
-            
-            const primeiraPalavraRec = rec.split(' ')[0].toLowerCase();
-            const gerundiosComuns = ['mostrando', 'abrindo', 'exigindo', 'gerando', 'visando', 'propondo', 'direcionando', 'demandando', 'sinalizando', 'reforçando', 'consolidando', 'oferecendo'[...];  
-            if (gerundiosComuns.includes(primeiraPalavraRec)) {
-                let fatoLimpo = fato.endsWith('.') ? fato.slice(0, -1) : fato;
-                return `${fatoLimpo}, ${primeiraPalavraRec} ${rec.substring(primeiraPalavraRec.length).trim()}`;
+        // 2. FUNÇÃO: DISPARAR PROCESSAMENTO BOXNET
+        async function dispararAnaliseClipping() {
+            const urlInput = document.getElementById('input-url-clipping').value.trim();
+            const btn = document.getElementById('btn-processar-clipping');
+
+            if (!urlInput.includes('boxnet.com.br')) {
+                alert('Por favor, insira uma URL válida da Boxnet.');
+                return;
             }
-            
-            let fatoComPonto = fato.endsWith('.') ? fato : fato + ".";
-            return `${fatoComPonto} ${rec}`;
-        }
 
-        // Funções de interface...
-        function exportarJSON() {
-            const jsonOrdenado = [...dadosOportunidades].sort((a, b) => {
-                return converterDataParaISODate(b.data) - converterDataParaISODate(a.data);
-            });
+            btn.disabled = true;
+            btn.innerHTML = `<i class="fa-solid fa-circle-notch animate-spin"></i> <span>Enviando para Análise...</span>`;
 
-            const jsonString = JSON.stringify(jsonOrdenado, null, 4);
-            const blob = new Blob([jsonString], { type: "application/json" });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'oportunidades.json';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
+            try {
+                // OBS: Ajuste o nome do workflow (.yml) caso seja diferente.
+                const response = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/processar_clipping.yml/dispatches`, {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/vnd.github+json',
+                        'Authorization': `Bearer ${GITHUB_PAT}`,
+                        'X-GitHub-Api-Version': '2022-11-28'
+                    },
+                    body: JSON.stringify({ ref: 'main', inputs: { clipping_url: urlInput } })
+                });
+
+                if (response.ok || response.status === 204) {
+                    alert('Clipping enviado com sucesso! O robô analisará as pautas e adicionará as recomendações ao Dashboard em breve.');
+                    document.getElementById('input-url-clipping').value = '';
+                } else {
+                    throw new Error(`Erro API: Status ${response.status}`);
+                }
+            } catch (erro) {
+                console.error(erro);
+                alert('Falha ao acionar a Action do Boxnet. Verifique suas credenciais do GitHub no código fonte.');
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = `<i class="fa-solid fa-file-import"></i> <span>Extrair Inteligência</span>`;
+            }
         }
     </script>
-    
-    <style>
-        .custom-scrollbar::-webkit-scrollbar { width: 5px; }
-        .custom-scrollbar::-webkit-scrollbar-track { background: #f5f5f4; border-radius: 4px;}
-        .custom-scrollbar::-webkit-scrollbar-thumb { background: #d6d3d1; border-radius: 4px; }
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #a8a29e; }
-    </style>
 </body>
 </html>
