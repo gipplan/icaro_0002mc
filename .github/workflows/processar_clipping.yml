@@ -1,0 +1,40 @@
+name: 📰 Processar Clipping Boxnet
+
+on:
+  workflow_dispatch:
+    inputs:
+      clipping_url:
+        description: 'URL do Clipping Boxnet (ex: https://bookweb.boxnet.com.br/?idContainer=...)'
+        required: true
+        type: string
+
+jobs:
+  process-clipping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Instalar Dependências
+        run: |
+          python -m pip install --upgrade pip
+          pip install google-genai requests beautifulsoup4
+
+      - name: Executar Análise do Clipping
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python processar_clipping.py "${{ github.event.inputs.clipping_url }}"
+
+      - name: Salvar e Publicar Resultados no Repositório
+        run: |
+          git config --global user.name "Í.C.A.R.O. Bot"
+          git config --global user.email "icaro-bot@ifood.com.br"
+          git add oportunidades.json
+          git commit -m "feat(clipping): adição automática via Boxnet" || exit 0
+          git push
