@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I.C.A.R.O. Engine - Busca Ativa (iFood)</title>
+    <title>I.C.A.R.O. Engine - Busca Ativa (Arcos Dorados)</title>
     <!-- Google Fonts: Lora (Serif) & Plus Jakarta Sans (Sans-serif) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,10 +15,14 @@
             theme: {
                 extend: {
                     colors: {
-                        ifood: {
-                            red: '#EA1D2C',
-                            chumbo: '#575756',
-                            dark: '#111111'
+                        mcd: {
+                            red: '#DA291C',
+                            'red-dark': '#B01D13',
+                            'red-light': '#FFEDEC',
+                            yellow: '#FFC72C',
+                            dark: '#27251F',
+                            gray: '#65676B',
+                            bg: '#F4F5F7'
                         }
                     },
                     fontFamily: {
@@ -37,12 +41,12 @@
         <div class="bg-stone-900 border border-stone-800 p-8 rounded-2xl max-w-md w-full text-center shadow-2xl">
             <span class="text-4xl mb-4 block">🔒</span>
             <h2 class="text-xl font-bold text-white mb-2">Acesso Restrito</h2>
-            <p class="text-sm text-stone-400 mb-6">I.C.A.R.O. ENGINE | IFOOD CORPORATE PR</p>
+            <p class="text-sm text-stone-400 mb-6">I.C.A.R.O. ENGINE | ARCOS DORADOS CORPORATE PR</p>
             
             <input id="sitePassword" type="password" placeholder="Digite a chave de acesso..." 
-                   class="w-full p-3 bg-stone-950 border border-stone-700 rounded-lg text-white text-center focus:outline-none focus:border-ifood-red mb-4 transition-all tracking-widest text-sm">
+                   class="w-full p-3 bg-stone-950 border border-stone-700 rounded-lg text-white text-center focus:outline-none focus:border-mcd-red mb-4 transition-all tracking-widest text-sm">
             
-            <button onclick="verificarSenha()" class="w-full bg-ifood-red hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-colors uppercase text-sm tracking-wider">
+            <button onclick="verificarSenha()" class="w-full bg-mcd-red hover:bg-mcd-red-dark text-white font-bold py-3 px-6 rounded-lg transition-colors uppercase text-sm tracking-wider">
                 Desbloquear Painel DEV
             </button>
             <p id="msgErro" class="text-xs text-red-400 mt-3 hidden font-semibold">Chave incorreta. Tente novamente.</p>
@@ -56,12 +60,12 @@
             <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
                 <!-- Logo & I.C.A.R.O. Identity -->
                 <div class="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
-                    <img src="logo.png" alt="iFood PR" class="h-10 md:h-12 object-contain" onerror="this.style.display='none'; document.getElementById('fallbackTitle').classList.remove('hidden')">
-                    <span id="fallbackTitle" class="hidden text-xl font-bold text-stone-800 tracking-widest uppercase">iFood <span class="text-ifood-red">PR</span></span>
+                    <img src="mcdonalds_logo.svg" alt="Arcos Dorados PR" class="h-10 md:h-12 object-contain" onerror="this.style.display='none'; document.getElementById('fallbackTitle').classList.remove('hidden'); this.src='https://upload.wikimedia.org/wikipedia/commons/3/36/McDonald%27s_Golden_Arches.svg'; this.style.display='block';">
+                    <span id="fallbackTitle" class="hidden text-xl font-bold text-stone-800 tracking-widest uppercase">Arcos Dorados <span class="text-mcd-red">PR</span></span>
                     
                     <div class="border-t sm:border-t-0 sm:border-l border-stone-300 pt-3 sm:pt-0 sm:pl-4 py-1">
-                        <h2 class="text-sm md:text-lg font-bold text-stone-950 flex flex-wrap items-center justify-center sm:justify-start gap-1 md:gap-2 leading-none mb-1.5 uppercase tracking-wid[...]">
-                            <span class="text-ifood-red font-black tracking-wider">I.C.A.R.O.</span>
+                        <h2 class="text-sm md:text-lg font-bold text-stone-950 flex flex-wrap items-center justify-center sm:justify-start gap-1 md:gap-2 leading-none mb-1.5 uppercase tracking-widest">
+                            <span class="text-mcd-red font-black tracking-wider">I.C.A.R.O.</span>
                             <span class="text-stone-300 hidden sm:inline">|</span>
                             <span class="text-stone-800 font-extrabold">Busca Ativa (Modo DEV)</span>
                         </h2>
@@ -70,7 +74,7 @@
                         </p>
                     </div>
                 </div>
-                <a href="index.html" class="bg-stone-900 hover:bg-black text-white text-xs font-bold py-2.5 px-5 rounded-lg transition-colors shadow-sm uppercase tracking-wider">
+                <a href="index.html" class="bg-mcd-dark hover:bg-black text-white text-xs font-bold py-2.5 px-5 rounded-lg transition-colors shadow-sm uppercase tracking-wider">
                     ← Voltar ao Radar
                 </a>
             </div>
@@ -85,7 +89,7 @@
                 </div>
                 <div class="w-full sm:w-1/2">
                     <input id="tokenSeguro" type="password" placeholder="Cole seu ghp_... aqui" 
-                           class="w-full p-2.5 bg-stone-50 border border-stone-300 rounded-lg text-sm text-stone-800 focus:outline-none focus:border-ifood-red focus:ring-1 focus:ring-ifood-red tra[...]">
+                           class="w-full p-2.5 bg-stone-50 border border-stone-300 rounded-lg text-sm text-stone-800 focus:outline-none focus:border-mcd-red focus:ring-1 focus:ring-mcd-red transition-all">
                 </div>
             </div>
 
@@ -97,9 +101,9 @@
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4 items-center">
-                    <input id="inputMarca" type="text" placeholder="Ex: Rappi, STF, Ministério do Trabalho, Zé Delivery..." 
-                           class="w-full sm:w-2/3 p-3 bg-stone-50 border border-stone-300 rounded-lg text-stone-800 focus:outline-none focus:border-ifood-red focus:ring-1 focus:ring-ifood-red tra[...]">
-                    <button onclick="forcarBusca()" class="w-full sm:w-1/3 bg-ifood-red hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-colors shadow-sm uppercase tracking-w[...]">
+                    <input id="inputMarca" type="text" placeholder="Ex: Burger King, STF, Procon, Franquias, Méqui..." 
+                           class="w-full sm:w-2/3 p-3 bg-stone-50 border border-stone-300 rounded-lg text-stone-800 focus:outline-none focus:border-mcd-red focus:ring-1 focus:ring-mcd-red transition-all">
+                    <button onclick="forcarBusca()" class="w-full sm:w-1/3 bg-mcd-red hover:bg-mcd-red-dark text-white font-bold py-3 px-6 rounded-lg transition-colors shadow-sm uppercase tracking-wider">
                         Acionar Robô 🚀
                     </button>
                 </div>
@@ -107,8 +111,8 @@
 
             <!-- Feedback de Carregamento -->
             <div id="statusBox" class="hidden bg-white border border-stone-200 p-6 rounded-xl text-center shadow-sm">
-                <div class="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-ifood-red mb-4"></div>
-                <p class="text-red-700 font-bold" id="statusMessage">Iniciando motor I.C.A.R.O. nos servidores...</p>
+                <div class="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-mcd-red mb-4"></div>
+                <p class="text-mcd-red-dark font-bold" id="statusMessage">Iniciando motor I.C.A.R.O. nos servidores...</p>
                 <p class="text-xs text-stone-500 mt-2">Isso leva cerca de 1 a 2 minutos enquanto o Gemini realiza a pesquisa no Google e formata o JSON.</p>
             </div>
         </main>
@@ -117,7 +121,7 @@
     <!-- Rodapé -->
     <footer class="bg-white border-t border-stone-200 py-6 px-8 text-center mt-12 shadow-sm">
         <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-stone-400 tracking-wider">
-            <p>© 2026 iFood Corporate PR | I.C.A.R.O. Engine.</p>
+            <p>© 2026 Arcos Dorados Corporate PR | I.C.A.R.O. Engine.</p>
         </div>
     </footer>
 
@@ -178,14 +182,18 @@
 
             localStorage.setItem("icaro_pat", token);
 
-            const REPO_OWNER = "gipplan";                
-            const REPO_NAME = "icaro_0001if";                      
+            // CONFIGURAÇÕES DO REPOSITÓRIO GITHUB DA ARCOS DORADOS
+            const REPO_OWNER = "SEU_USUARIO_AQUI";                
+            const REPO_NAME = "NOME_DO_REPO_MCDONALDS";                      
 
             const statusBox = document.getElementById('statusBox');
             const statusMessage = document.getElementById('statusMessage');
             
             statusBox.classList.remove('hidden');
             statusMessage.innerText = `Solicitando varredura extraordinária para: ${marca}...`;
+            
+            // Aqui você deve inserir a lógica real de fetch (POST) para a API do GitHub Actions, 
+            // similar ao que foi estruturado no painel admin.html
         }
     </script>
 </body>
