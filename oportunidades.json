@@ -1,5 +1,154 @@
 [
   {
+    "titulo": "McDonald's renova clássicos e eleva a experiência de preparo no Brasil",
+    "resumo_fato": "O McDonald's implementou uma evolução técnica no preparo de seus hambúrgueres clássicos (Big Mac, Quarterão, Cheeseburger) no Brasil para torná-los mais quentes, suculentos e saborosos, sem alterar a qualidade dos ingredientes.",
+    "recomendacao": "Evidenciando a nossa obsessão por qualidade e transparência ao amplificar a evolução técnica no preparo dos clássicos, utilizando o programa Portas Abertas para demonstrar na prática o uso de carne 100% bovina, sem corantes ou aromas artificiais e preparada na hora, blindando a reputação da marca contra fake news nutricionais e impulsionando o Same Store Sales.",
+    "tipo": "operacao",
+    "data": "08/08/2026",
+    "setor": "QSR / Operações",
+    "marcas": [
+      "McDonald's"
+    ],
+    "produtos": [
+      "Imersão Exclusiva de Influenciadores (Fact-Finding Tour)",
+      "Infográfico de Defesa Reativa (Issue Management)",
+      "Série de Mini-Docs Proprietários focados nos Fornecedores"
+    ],
+    "link_noticia": "https://www.obracht.com.br/mcdonalds-renova-classicos-e-eleva-a-experiencia-no-brasil/",
+    "imagem": ""
+  },
+  {
+    "titulo": "McDonald's traz batalha de K-Pop ao público brasileiro",
+    "resumo_fato": "O McDonald's anunciou uma ativação focada na cultura K-Pop no Brasil, promovendo batalhas de dança e experiências imersivas para engajar a Geração Z e os fãs do gênero musical.",
+    "recomendacao": "Consolidando a nossa 'Cooltura de Serviço' e a conexão emocional com a Geração Z ao transformar a ativação de K-Pop em uma plataforma de expressão cultural e inclusão, demonstrando que a hospitalidade do Méqui abraça as paixões de nossos consumidores e colaboradores jovens, impulsionando o orgulho interno e o fluxo de visitas físicas nas lojas.",
+    "tipo": "inovacao",
+    "data": "08/08/2026",
+    "setor": "Marketing / Entretenimento",
+    "marcas": [
+      "McDonald's"
+    ],
+    "produtos": [
+      "Fórum Proprietário ('Future of Work Latam')",
+      "Imersão Exclusiva de Influenciadores (Fact-Finding Tour)"
+    ],
+    "link_noticia": "https://www.meioemensagem.com.br/marketing/mcdonalds-traz-batalha-de-k-pop-ao-publico-brasileiro",
+    "imagem": ""
+  },
+  {
+    "titulo": "McDonald's Brasil lança Mini Crocs colecionáveis no McLanche Feliz",
+    "resumo_fato": "O McDonald's Brasil lançou uma nova campanha do McLanche Feliz trazendo miniaturas colecionáveis da famosa marca de calçados Crocs, gerando grande engajamento entre o público jovem e colecionadores.",
+    "recomendacao": "Aproveitando o forte apelo pop e o engajamento gerado pelos Mini Crocs colecionáveis para reativar a narrativa de qualidade inegociável do McLanche Feliz, promovendo uma experiência acolhedora que convida as famílias a conhecerem o preparo sob demanda e os ingredientes sem corantes e aromas artificiais por meio do programa Portas Abertas.",
+    "tipo": "inovacao",
+    "data": "08/08/2026",
+    "setor": "Marketing / Varejo Alimentar",
+    "marcas": [
+      "McDonald's",
+      "Crocs"
+    ],
+    "produtos": [
+      "Imersão Exclusiva de Influenciadores (Fact-Finding Tour)",
+      "Série de Mini-Docs Proprietários focados nos Fornecedores"
+    ],
+    "link_noticia": "https://gkpb.com.br/noticias/mcdonalds-brasil-lanca-mini-crocs-colecionaveis-no-mclanche-feliz/",
+    "imagem": ""
+  },
+  {
+    "titulo": "Arcos Dorados lança portal imobiliário para receber propostas de terrenos na América Latina visando expansão",
+    "resumo_fato": "A Arcos Dorados lançou um portal imobiliário oficial para receber propostas de terrenos na Argentina, Brasil e outros países da região, com o objetivo de acelerar e otimizar seu plano de expansão de restaurantes em 2026 (que prevê abrir entre 105 e 115 novas unidades).",
+    "recomendacao": "Alavancando a capilaridade e a atratividade do nosso modelo de franquias ao digitalizar e democratizar a prospecção de novos pontos comerciais, gerando valor direto para os franqueados na ponta, acelerando o plano de expansão sustentável de mais de 100 lojas no Brasil e protegendo o Same Store Sales ao mapear regiões de alta demanda.",
+    "tipo": "franqueados",
+    "data": "08/08/2026",
+    "setor": "Franquias / Expansão Imobiliária",
+    "marcas": [
+      "Arcos Dorados",
+      "McDonald's"
+    ],
+    "produtos": [
+      "Toolkit Estratégico para Franqueados",
+      "Pitch Deck de Captação B2B"
+    ],
+    "link_noticia": "https://www.arcosdorados.com/",
+    "imagem": ""
+  },
+  {
+    "titulo": "Desemprego geral cai para 5,4% no Brasil, mas desemprego entre jovens de 18 a 24 anos continua alto (13,8%)",
+    "resumo_fato": "A taxa de desemprego geral no Brasil caiu para 5,4% no trimestre encerrado em junho de 2026 (menor nível histórico), mas o desemprego entre jovens de 18 a 24 anos continua em patamares elevados (13,8%), revelando uma distorção no mercado de trabalho e dificuldades de inserção da Geração Z.",
+    "recomendacao": "Liderando o debate nacional sobre o futuro do trabalho através de uma estratégia de Brand Publishing que posicione a Arcos Dorados como a maior geradora de primeiro emprego e principal promotora de inclusão social do país, neutralizando críticas à Geração Z e destacando nossas certificações de diversidade para atrair e reter talentos.",
+    "tipo": "esg",
+    "data": "08/08/2026",
+    "setor": "Empregabilidade / Economia (IBGE)",
+    "marcas": [
+      "Arcos Dorados",
+      "McDonald's"
+    ],
+    "produtos": [
+      "Manifesto de Liderança Inclusiva",
+      "Fórum Proprietário ('Future of Work Latam')",
+      "Artigos de Opinião via CHRO"
+    ],
+    "link_noticia": "https://monitormercantil.com.br/o-desemprego-caiu-mas-os-jovens-continuam-ficando-para-tras/",
+    "imagem": ""
+  },
+  {
+    "titulo": "Zamp (Burger King) reduz prejuízo no 2T26, mas dívida líquida vai a R$ 1,2 bilhão",
+    "resumo_fato": "A Zamp, operadora do Burger King, Popeyes, Starbucks e Subway no Brasil, reduziu seu prejuízo líquido para R$ 44,8 milhões no 2T26, mas sua dívida líquida (sem IFRS 16) subiu para R$ 1,2 bilhão, mostrando pressão financeira contínua.",
+    "recomendacao": "Posicionando a Arcos Dorados com postura de líder de categoria incontestável, focando na divulgação de nossa robusta saúde financeira e capacidade de autofinanciamento para expansão de lojas sem recorrer a endividamento excessivo, o que atrai novos franqueados, protege o Same Store Sales e reforça a confiança de investidores no modelo de negócios da companhia.",
+    "tipo": "concorrencia",
+    "data": "08/08/2026",
+    "setor": "QSR / Finanças",
+    "marcas": [
+      "Zamp",
+      "Burger King",
+      "Arcos Dorados"
+    ],
+    "produtos": [
+      "Whitepaper de Impacto Setorial",
+      "Painel Exclusivo para Stakeholders e Investidores"
+    ],
+    "link_noticia": "https://economia.uol.com.br/noticias/redacao/2026/08/07/dona-do-burger-king-corta-prejuizo-mas-divida-liquida-vai-a-r-12-bi.htm",
+    "imagem": ""
+  },
+  {
+    "titulo": "Alertas de desmatamento na Amazônia caem 36,8% e atingem menor patamar histórico em 2026",
+    "resumo_fato": "Dados do sistema Deter do Inpe apontam que os alertas de desmatamento na Amazônia caíram 36,87% entre agosto de 2025 e julho de 2026, registrando o menor valor da série histórica. O Cerrado também registrou queda de 7,8%.",
+    "recomendacao": "Estruturando um ecossistema de comunicação corporativa que posicione a Arcos Dorados como pioneira na preservação ambiental, demonstrando que a queda histórica do desmatamento nacional reflete as práticas rigorosas de nossa Política de Compra de Carne Bovina Livre de Desmatamento (monitorada via Agrotools) e o rastreio de nossos seis ingredientes estratégicos, gerando valor reputacional inquestionável para a marca e blindando o Same Store Sales contra boicotes ideológicos.",
+    "tipo": "esg",
+    "data": "08/08/2026",
+    "setor": "Meio Ambiente / Agronegócio",
+    "marcas": [
+      "Arcos Dorados",
+      "Marfrig",
+      "Agrotools"
+    ],
+    "produtos": [
+      "Dossiê de Rastreabilidade",
+      "Press Tour Executivo B2B focado na editoria de Agro/Economia",
+      "Positioning Paper"
+    ],
+    "link_noticia": "https://www.gov.br/mma/pt-br/noticias/dados-do-deter-indicam-reducao-dos-alertas-de-desmatamento-na-amazonia-e-no-cerrado-no-intervalo-de-2025-2026",
+    "imagem": ""
+  },
+  {
+    "titulo": "McDia Feliz 2026 anuncia Cafu como embaixador e inicia contagem regressiva para o dia 22 de agosto",
+    "resumo_fato": "O McDia Feliz 2026, marcado para o dia 22 de agosto, anunciou o ex-jogador Cafu como embaixador nacional da campanha. A pré-venda de tíquetes digitais e físicos já está ativa para beneficiar a Casa Ronald McDonald Brasil e o Instituto Ayrton Senna.",
+    "recomendacao": "Orquestrando uma mobilização de alta capilaridade focada no 'Patrocínio Feliz' e parcerias corporativas de grande escala, alavancando a imagem do embaixador Cafu para impulsionar as vendas antecipadas de tíquetes digitais via canais corporativos e app, visando superar o recorde histórico de arrecadação e reativar o orgulho interno de nossos franqueados e colaboradores na ponta.",
+    "tipo": "esg",
+    "data": "08/08/2026",
+    "setor": "Responsabilidade Social / Terceiro Setor",
+    "marcas": [
+      "McDonald's",
+      "Casa Ronald McDonald",
+      "Instituto Ayrton Senna"
+    ],
+    "produtos": [
+      "Toolkit Estratégico para Franqueados",
+      "Pitch Deck de Captação B2B",
+      "Estratégia de Amplificação em Canais Fechados (WhatsApp/E-mail Marketing Integrado)"
+    ],
+    "link_noticia": "https://www.meioemensagem.com.br/marketing/mcdia-feliz-2026-anuncia-cafu-como-embaixador-da-campanha",
+    "imagem": ""
+  },
+  {
     "titulo": "McDonald's inaugura novo quiosque de sobremesas no Aeroporto de Fortaleza",
     "resumo_fato": "O McDonald's inaugurou um novo quiosque de sobremesas na sala de embarque doméstico do Aeroporto de Fortaleza, operado pela Fraport Brasil. A nova unidade visa oferecer maior conveniência e diversificar o mix de alimentação para os passageiros em trânsito.",
     "recomendacao": "Alavancando a capilaridade e a conveniência do modelo de franquias da Arcos Dorados ao promover a expansão de novos formatos de pontos de venda em locais de alto fluxo (como aeroportos), reforçando a nossa 'Cooltura de Serviço' e hospitalidade para gerar valor imediato na ponta e impulsionar o Same Store Sales dos franqueados regionais.",
