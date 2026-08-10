@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Í.C.A.R.O. | Editor de Pautas - Arcos Dorados</title>
+    <title>Í.C.A.R.O. | Gestão Visual - Arcos Dorados</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
@@ -35,30 +35,28 @@
     </script>
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .hide-scrollbar::-webkit-scrollbar { display: none; }
-        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
 <body class="min-h-full flex flex-col text-[#27251F] antialiased bg-[#F4F5F7]">
 
     <!-- NAVBAR ADMIN -->
-    <header class="sticky top-0 z-40 bg-mcd-dark border-b border-gray-800 shadow-md">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+    <header class="sticky top-0 z-40 bg-white border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
             <div class="flex items-center gap-4">
-                <a href="index.html" class="flex items-center gap-3 text-white hover:text-mcd-yellow transition-colors" title="Voltar ao Dashboard">
+                <a href="index.html" class="flex items-center gap-3 text-gray-400 hover:text-mcd-red transition-colors" title="Voltar ao Dashboard">
                     <i class="fa-solid fa-arrow-left"></i>
                 </a>
-                <div class="h-6 w-[1px] bg-gray-700 hidden sm:block"></div>
+                <div class="h-6 w-[1px] bg-gray-200 hidden sm:block"></div>
                 <div class="flex items-center gap-2">
-                    <span class="bg-mcd-yellow text-mcd-dark font-bold text-xs px-2.5 py-1 rounded-full uppercase tracking-wider">Í.C.A.R.O. CMS</span>
-                    <span class="text-xs font-semibold text-gray-400 hidden sm:inline-block">Editor de Pautas Arcos Dorados</span>
+                    <span class="bg-mcd-red-light text-mcd-red font-bold text-xs px-2.5 py-1 rounded-full uppercase tracking-wider">Í.C.A.R.O. ADMIN</span>
+                    <span class="text-xs font-semibold text-gray-500 hidden sm:inline-block">Curadoria Visual de Pautas</span>
                 </div>
             </div>
             
             <div class="flex items-center gap-3">
-                <button onclick="salvarNoGitHub()" id="btn-save-github" class="bg-mcd-red hover:bg-mcd-red-dark text-white font-bold text-xs px-4 py-2 rounded-lg transition-all shadow-md flex items-center gap-2">
+                <button onclick="salvarNoGitHub()" id="btn-save-github" class="bg-mcd-red hover:bg-mcd-red-dark text-white font-bold text-xs px-5 py-2.5 rounded-xl transition-all shadow-md flex items-center gap-2">
                     <i class="fa-solid fa-cloud-arrow-up"></i>
-                    <span class="hidden sm:inline">Salvar Alterações no Servidor</span>
+                    <span class="hidden sm:inline">Salvar Base de Dados</span>
                     <span class="sm:hidden">Salvar</span>
                 </button>
             </div>
@@ -66,64 +64,45 @@
     </header>
 
     <!-- ADMIN CONTENT -->
-    <main class="flex-1 max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
         
         <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-4">
             <div>
-                <h1 class="text-2xl font-extrabold text-gray-900 tracking-tight mb-1">Gerenciador de Oportunidades</h1>
-                <p class="text-sm text-gray-600">Edite, exclua ou ajuste as recomendações que aparecem no painel principal.</p>
+                <h1 class="text-2xl font-extrabold text-gray-900 tracking-tight mb-1">Grid de Edição Visual</h1>
+                <p class="text-sm text-gray-600">Verifique as imagens, textos e categorias. As alterações refletem no frontend da Arcos Dorados.</p>
             </div>
             <div class="bg-white px-4 py-2 rounded-xl border border-gray-200 shadow-sm inline-flex items-center gap-3">
-                <i class="fa-solid fa-database text-gray-400"></i>
+                <i class="fa-solid fa-layer-group text-gray-400"></i>
                 <div class="flex flex-col">
-                    <span class="text-[10px] font-bold text-gray-400 uppercase">Pautas Ativas</span>
+                    <span class="text-[10px] font-bold text-gray-400 uppercase">Cards Ativos</span>
                     <span class="text-sm font-extrabold text-gray-900" id="total-pautas">0</span>
                 </div>
             </div>
         </div>
 
-        <!-- LISTA DE PAUTAS (CMS) -->
-        <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
-            <div class="bg-gray-50 border-b border-gray-200 px-6 py-3 flex items-center justify-between">
-                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">Banco de Dados (oportunidades.json)</span>
-                <button onclick="carregarDadosGitHub()" class="text-gray-500 hover:text-mcd-red transition-colors text-xs font-semibold flex items-center gap-1">
-                    <i class="fa-solid fa-rotate-right"></i> Recarregar
-                </button>
-            </div>
-            
-            <div id="loading-state" class="p-12 text-center">
-                <div class="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-mcd-red mb-4"></div>
-                <p class="text-sm font-semibold text-gray-500">Conectando ao GitHub e baixando pautas...</p>
-            </div>
-
-            <ul id="pautas-list" class="divide-y divide-gray-100 hidden">
-                <!-- Itens injetados via JS -->
-            </ul>
-            
-            <div id="empty-state" class="hidden p-12 text-center">
-                <i class="fa-regular fa-folder-open text-4xl text-gray-300 mb-3"></i>
-                <p class="text-sm font-semibold text-gray-500">Nenhuma pauta encontrada no sistema.</p>
-            </div>
+        <div id="loading-state" class="p-12 text-center bg-white rounded-3xl border border-gray-200">
+            <div class="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-mcd-red mb-4"></div>
+            <p class="text-sm font-semibold text-gray-500">Conectando ao GitHub e baixando imagens...</p>
         </div>
 
-        <!-- CONFIGURAÇÕES ALERT -->
-        <div class="mt-8 bg-amber-50 border border-amber-200 rounded-2xl p-5 flex items-start gap-4">
-            <div class="text-amber-500 mt-0.5"><i class="fa-solid fa-triangle-exclamation text-lg"></i></div>
-            <div>
-                <h4 class="text-sm font-bold text-amber-900 mb-1">Atenção ao Salvar</h4>
-                <p class="text-xs text-amber-800/80 leading-relaxed">
-                    Certifique-se de configurar as variáveis <code class="font-mono bg-amber-100 px-1 rounded text-amber-900">GITHUB_PAT</code>, <code class="font-mono bg-amber-100 px-1 rounded text-amber-900">REPO_OWNER</code> e <code class="font-mono bg-amber-100 px-1 rounded text-amber-900">REPO_NAME</code> no código-fonte para permitir a edição direta do arquivo. Ao clicar em salvar, a atualização vai direto para o repositório principal.
-                </p>
-            </div>
+        <!-- GRID DE CARDS PARA ADMIN -->
+        <div id="cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 hidden">
+            <!-- Cards injetados via JS -->
+        </div>
+        
+        <div id="empty-state" class="hidden p-12 text-center bg-white rounded-3xl border border-dashed border-gray-200 my-8">
+            <i class="fa-regular fa-folder-open text-4xl text-gray-300 mb-3"></i>
+            <p class="text-sm font-semibold text-gray-500">Nenhuma pauta encontrada no sistema.</p>
         </div>
 
     </main>
 
     <!-- MODAL DE EDIÇÃO -->
     <div id="modal-edit" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
-        <div class="bg-white rounded-3xl max-w-3xl w-full p-6 sm:p-8 shadow-2xl border border-gray-100 my-auto">
+        <div class="bg-white rounded-3xl max-w-3xl w-full p-6 sm:p-8 shadow-2xl border border-gray-100 my-auto relative">
+            
             <div class="flex items-center justify-between mb-6 border-b border-gray-100 pb-4">
-                <h3 class="text-lg font-extrabold text-gray-900">Editar Pauta</h3>
+                <h3 class="text-lg font-extrabold text-gray-900">Editar Detalhes do Card</h3>
                 <button onclick="fecharModalEdit()" class="text-gray-400 hover:text-gray-600 p-1 bg-gray-100 rounded-full w-8 h-8 flex items-center justify-center transition-colors">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
@@ -144,7 +123,7 @@
                             <option value="inovacao">Inovação & App</option>
                             <option value="operacao">Operação & Lojas</option>
                             <option value="concorrencia">Concorrência (QSR)</option>
-                            <option value="esg">Receita do Futuro (ESG)</option>
+                            <option value="esg">Receita do Futuro</option>
                             <option value="crise">Gestão de Crise</option>
                         </select>
                     </div>
@@ -155,30 +134,24 @@
                 </div>
 
                 <div>
-                    <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Resumo do Fato</label>
-                    <textarea id="edit-resumo" rows="3" class="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium focus:outline-none focus:border-mcd-red transition-all"></textarea>
+                    <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Link da Imagem de Capa (Deixe em branco para usar padrão)</label>
+                    <input type="url" id="edit-imagem" placeholder="https://..." class="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium focus:outline-none focus:border-mcd-red transition-all">
                 </div>
 
                 <div>
-                    <label class="block text-xs font-bold text-mcd-red uppercase tracking-wider mb-1.5"><i class="fa-solid fa-lightbulb mr-1"></i> Tática Sugerida (Recomendação)</label>
-                    <textarea id="edit-recomendacao" rows="4" class="w-full px-3.5 py-2.5 bg-red-50 border border-red-200 rounded-xl text-sm font-medium focus:outline-none focus:border-mcd-red transition-all text-gray-900"></textarea>
+                    <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Resumo do Fato</label>
+                    <textarea id="edit-resumo" rows="3" class="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium focus:outline-none focus:border-mcd-red transition-all resize-none"></textarea>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Setor</label>
-                        <input type="text" id="edit-setor" class="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium focus:outline-none focus:border-mcd-red transition-all">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Link da Notícia</label>
-                        <input type="url" id="edit-link" class="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium focus:outline-none focus:border-mcd-red transition-all">
-                    </div>
+                <div>
+                    <label class="block text-xs font-bold text-mcd-red uppercase tracking-wider mb-1.5"><i class="fa-solid fa-lightbulb mr-1"></i> Tática Sugerida</label>
+                    <textarea id="edit-recomendacao" rows="4" class="w-full px-3.5 py-2.5 bg-red-50 border border-red-200 rounded-xl text-sm font-medium focus:outline-none focus:border-mcd-red transition-all text-gray-900 resize-none"></textarea>
                 </div>
 
                 <div class="pt-4 border-t border-gray-100 flex items-center justify-end gap-3 mt-6">
                     <button type="button" onclick="fecharModalEdit()" class="px-5 py-2.5 rounded-xl text-xs font-bold text-gray-600 bg-gray-100 hover:bg-gray-200 transition-all">Cancelar</button>
-                    <button type="button" onclick="salvarEdicaoLocal()" class="px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-mcd-dark hover:bg-black transition-all flex items-center gap-2">
-                        <i class="fa-solid fa-check"></i> Concluir Edição
+                    <button type="button" onclick="salvarEdicaoLocal()" class="px-5 py-2.5 rounded-xl text-xs font-bold text-mcd-dark bg-mcd-yellow hover:bg-yellow-500 transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-check"></i> Atualizar Card
                     </button>
                 </div>
             </form>
@@ -199,7 +172,18 @@
         let fileSha = "";
         let indiceEdicaoAtual = -1;
 
-        // Funções para lidar com Base64 e acentos (UTF-8)
+        // Dicionário de Imagens Padrão (Fallback McDonald's)
+        const IMAGENS_INSTITUCIONAIS = {
+            regulacao: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=2000&auto=format&fit=crop',
+            franqueados: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=2000&auto=format&fit=crop',
+            inovacao: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2000&auto=format&fit=crop',
+            operacao: 'https://images.unsplash.com/photo-1615719413546-198b25453f85?q=80&w=2000&auto=format&fit=crop',
+            concorrencia: 'https://images.unsplash.com/photo-1590846406792-0adc7f924bfc?q=80&w=2000&auto=format&fit=crop',
+            esg: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2000&auto=format&fit=crop',
+            crise: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=2000&auto=format&fit=crop',
+            default: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=2000&auto=format&fit=crop'
+        };
+
         function b64DecodeUnicode(str) {
             return decodeURIComponent(atob(str).split('').map(function(c) {
                 return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
@@ -212,9 +196,15 @@
             }));
         }
 
+        function parseDataBR(dataStr) {
+            if (!dataStr) return new Date(0);
+            const partes = dataStr.split('/');
+            return partes.length === 3 ? new Date(partes[2], partes[1] - 1, partes[0]) : new Date(0);
+        }
+
         // 1. CARREGAR DADOS DO GITHUB
         async function carregarDadosGitHub() {
-            const listContainer = document.getElementById('pautas-list');
+            const listContainer = document.getElementById('cards-container');
             const loadingState = document.getElementById('loading-state');
             const emptyState = document.getElementById('empty-state');
             
@@ -234,78 +224,103 @@
                     const data = await response.json();
                     fileSha = data.sha;
                     const jsonString = b64DecodeUnicode(data.content);
-                    pautasData = JSON.parse(jsonString);
-                    renderizarLista();
+                    const jsonCru = JSON.parse(jsonString);
+                    pautasData = jsonCru.sort((a, b) => parseDataBR(b.data) - parseDataBR(a.data));
+                    renderizarGrid();
                 } else {
-                    // Fallback para leitura local caso não encontre via API
-                    console.warn("Lendo arquivo local por falha na API.");
                     const resLocal = await fetch(FILE_PATH + '?t=' + Date.now());
-                    pautasData = await resLocal.json();
-                    renderizarLista();
+                    const jsonCru = await resLocal.json();
+                    pautasData = jsonCru.sort((a, b) => parseDataBR(b.data) - parseDataBR(a.data));
+                    renderizarGrid();
                 }
             } catch (error) {
                 console.error("Erro ao carregar dados:", error);
-                alert("Erro ao conectar ao banco de dados. Verifique o token e as permissões.");
                 loadingState.classList.add('hidden');
                 emptyState.classList.remove('hidden');
             }
         }
 
-        // 2. RENDERIZAR LISTA NO HTML
-        function renderizarLista() {
+        // 2. RENDERIZAR GRID VISUAL
+        function renderizarGrid() {
             document.getElementById('loading-state').classList.add('hidden');
-            const listContainer = document.getElementById('pautas-list');
+            const container = document.getElementById('cards-container');
             const emptyState = document.getElementById('empty-state');
             document.getElementById('total-pautas').innerText = pautasData.length;
 
             if (pautasData.length === 0) {
-                listContainer.classList.add('hidden');
+                container.classList.add('hidden');
                 emptyState.classList.remove('hidden');
                 return;
             }
 
-            listContainer.innerHTML = '';
-            pautasData.forEach((pauta, index) => {
-                const tipoBadge = gerarBadgeCategoria(pauta.tipo);
-                const li = document.createElement('li');
-                li.className = "px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition-colors group";
-                li.innerHTML = `
-                    <div class="flex-1 pr-4">
-                        <div class="flex items-center gap-2 mb-1">
-                            ${tipoBadge}
-                            <span class="text-[10px] text-gray-400 font-bold">${pauta.data || ''}</span>
+            container.innerHTML = '';
+            pautasData.forEach((item, index) => {
+                const configCategoria = {
+                    regulacao: { bg: 'bg-amber-100', text: 'text-amber-800', border: 'border-amber-200', label: 'Regulação & Inst.' },
+                    franqueados: { bg: 'bg-orange-100', text: 'text-orange-800', border: 'border-orange-200', label: 'Franqueados' },
+                    inovacao: { bg: 'bg-purple-100', text: 'text-purple-800', border: 'border-purple-200', label: 'Inovação & App' },
+                    operacao: { bg: 'bg-cyan-100', text: 'text-cyan-800', border: 'border-cyan-200', label: 'Operação & Lojas' },
+                    concorrencia: { bg: 'bg-blue-100', text: 'text-blue-800', border: 'border-blue-200', label: 'Concorrência' },
+                    esg: { bg: 'bg-emerald-100', text: 'text-emerald-800', border: 'border-emerald-200', label: 'Receita do Futuro' },
+                    crise: { bg: 'bg-rose-100', text: 'text-rose-800', border: 'border-rose-200', label: 'Gestão de Crise' }
+                };
+
+                const catConfig = configCategoria[item.tipo] || configCategoria.regulacao;
+                const imagemSrc = (item.imagem && item.imagem.trim() !== '') ? item.imagem : (IMAGENS_INSTITUCIONAIS[item.tipo] || IMAGENS_INSTITUCIONAIS.default);
+                
+                const fatoLimpo = item.resumo_fato || item.descricao || 'Sem resumo';
+
+                const cardHTML = `
+                    <article class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden relative group flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        
+                        <!-- Controles de Edição Hover -->
+                        <div class="absolute top-3 right-3 z-20 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            <button onclick="abrirModalEdit(${index})" class="bg-stone-900/90 hover:bg-black text-white text-[10px] px-3 py-1.5 rounded-lg font-bold uppercase tracking-wider backdrop-blur-md shadow-lg transition-colors flex items-center gap-1.5">
+                                <i class="fa-solid fa-pen"></i> Editar
+                            </button>
+                            <button onclick="excluirPauta(${index})" class="bg-mcd-red/90 hover:bg-mcd-red-dark text-white text-[10px] px-3 py-1.5 rounded-lg font-bold uppercase tracking-wider backdrop-blur-md shadow-lg transition-colors flex items-center gap-1.5">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
                         </div>
-                        <h4 class="text-sm font-bold text-gray-900 group-hover:text-mcd-red transition-colors line-clamp-1">${pauta.titulo}</h4>
-                        <p class="text-xs text-gray-500 line-clamp-1 mt-0.5">${pauta.recomendacao || 'Sem recomendação'}</p>
-                    </div>
-                    <div class="flex items-center gap-2 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
-                        <button onclick="abrirModalEdit(${index})" class="w-8 h-8 rounded-full bg-blue-50 text-blue-600 hover:bg-blue-100 flex items-center justify-center transition-colors" title="Editar">
-                            <i class="fa-solid fa-pen text-xs"></i>
-                        </button>
-                        <button onclick="excluirPauta(${index})" class="w-8 h-8 rounded-full bg-red-50 text-red-600 hover:bg-red-100 flex items-center justify-center transition-colors" title="Excluir">
-                            <i class="fa-solid fa-trash text-xs"></i>
-                        </button>
-                    </div>
+
+                        <!-- Área da Imagem -->
+                        <div class="relative h-44 w-full bg-gray-100 overflow-hidden flex-shrink-0">
+                            <img src="${imagemSrc}" alt="Capa" onerror="this.onerror=null; this.src='${IMAGENS_INSTITUCIONAIS.default}';" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+                            
+                            <div class="absolute top-3 left-3">
+                                <span class="${catConfig.bg} ${catConfig.text} ${catConfig.border} text-[10px] font-bold px-2.5 py-1 rounded-md border shadow-sm backdrop-blur-md">
+                                    ${catConfig.label}
+                                </span>
+                            </div>
+                            <div class="absolute bottom-3 right-3 bg-gray-900/80 text-white text-[10px] font-bold px-2 py-1 rounded backdrop-blur-md">
+                                ${item.data || 'Hoje'}
+                            </div>
+                        </div>
+
+                        <!-- Área de Conteúdo -->
+                        <div class="p-5 flex-1 flex flex-col">
+                            <h3 class="text-sm font-bold text-gray-900 mb-3 leading-snug line-clamp-2">${item.titulo}</h3>
+                            
+                            <div class="flex-grow flex flex-col gap-2">
+                                <div>
+                                    <span class="text-[9px] font-bold text-gray-400 uppercase tracking-widest block mb-0.5">O Fato</span>
+                                    <p class="text-xs text-gray-600 line-clamp-2 leading-relaxed">${fatoLimpo}</p>
+                                </div>
+                                
+                                <div class="bg-amber-50 p-2.5 rounded-lg border border-amber-100 mt-1 flex-grow">
+                                    <span class="text-[9px] font-bold text-mcd-red uppercase tracking-widest block mb-1">Tática Recomendada</span>
+                                    <p class="text-xs text-gray-800 font-medium italic line-clamp-3 leading-snug">"${item.recomendacao || 'Sem recomendação'}"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
                 `;
-                listContainer.appendChild(li);
+                container.innerHTML += cardHTML;
             });
 
             emptyState.classList.add('hidden');
-            listContainer.classList.remove('hidden');
-        }
-
-        function gerarBadgeCategoria(tipo) {
-            const configs = {
-                regulacao: { b: 'bg-amber-100', t: 'text-amber-800', l: 'Regulação' },
-                franqueados: { b: 'bg-orange-100', t: 'text-orange-800', l: 'Franqueados' },
-                inovacao: { b: 'bg-purple-100', t: 'text-purple-800', l: 'Inovação' },
-                operacao: { b: 'bg-cyan-100', t: 'text-cyan-800', l: 'Operação' },
-                concorrencia: { b: 'bg-blue-100', t: 'text-blue-800', l: 'Concorrência' },
-                esg: { b: 'bg-emerald-100', t: 'text-emerald-800', l: 'ESG' },
-                crise: { b: 'bg-rose-100', t: 'text-rose-800', l: 'Crise' }
-            };
-            const c = configs[tipo] || configs.regulacao;
-            return `<span class="${c.b} ${c.t} text-[9px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">${c.l}</span>`;
+            container.classList.remove('hidden');
         }
 
         // 3. FUNÇÕES DE EDIÇÃO LOCAL
@@ -316,10 +331,9 @@
             document.getElementById('edit-titulo').value = pauta.titulo || '';
             document.getElementById('edit-tipo').value = pauta.tipo || 'regulacao';
             document.getElementById('edit-data').value = pauta.data || '';
+            document.getElementById('edit-imagem').value = pauta.imagem || '';
             document.getElementById('edit-resumo').value = pauta.resumo_fato || pauta.descricao || '';
             document.getElementById('edit-recomendacao').value = pauta.recomendacao || '';
-            document.getElementById('edit-setor').value = pauta.setor || '';
-            document.getElementById('edit-link').value = pauta.link_noticia || '';
 
             document.getElementById('modal-edit').classList.remove('hidden');
         }
@@ -334,12 +348,14 @@
                 pautasData[indiceEdicaoAtual].titulo = document.getElementById('edit-titulo').value;
                 pautasData[indiceEdicaoAtual].tipo = document.getElementById('edit-tipo').value;
                 pautasData[indiceEdicaoAtual].data = document.getElementById('edit-data').value;
+                pautasData[indiceEdicaoAtual].imagem = document.getElementById('edit-imagem').value;
                 pautasData[indiceEdicaoAtual].resumo_fato = document.getElementById('edit-resumo').value;
                 pautasData[indiceEdicaoAtual].recomendacao = document.getElementById('edit-recomendacao').value;
-                pautasData[indiceEdicaoAtual].setor = document.getElementById('edit-setor').value;
-                pautasData[indiceEdicaoAtual].link_noticia = document.getElementById('edit-link').value;
                 
-                renderizarLista();
+                // Reordena caso a data tenha sido alterada
+                pautasData.sort((a, b) => parseDataBR(b.data) - parseDataBR(a.data));
+                
+                renderizarGrid();
                 fecharModalEdit();
             }
         }
@@ -347,7 +363,7 @@
         function excluirPauta(index) {
             if (confirm("Tem certeza que deseja excluir esta pauta? A alteração só será definitiva ao salvar no servidor.")) {
                 pautasData.splice(index, 1);
-                renderizarLista();
+                renderizarGrid();
             }
         }
 
@@ -355,12 +371,14 @@
         async function salvarNoGitHub() {
             const btn = document.getElementById('btn-save-github');
             
-            if(!confirm("Deseja publicar essas alterações diretamente no repositório? O Dashboard será atualizado na hora.")) return;
+            if(!confirm("Publicar essas alterações no repositório? O Dashboard principal será atualizado.")) return;
 
             btn.disabled = true;
             btn.innerHTML = `<i class="fa-solid fa-circle-notch animate-spin"></i> <span>Salvando...</span>`;
 
             try {
+                pautasData.sort((a, b) => parseDataBR(b.data) - parseDataBR(a.data));
+                
                 const jsonAtualizado = JSON.stringify(pautasData, null, 2);
                 const contentEncoded = b64EncodeUnicode(jsonAtualizado);
 
@@ -372,7 +390,7 @@
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
-                        message: "📝 Edição manual de pautas via I.C.A.R.O. CMS",
+                        message: "🖼️ Edição Visual de pautas e imagens via I.C.A.R.O. CMS",
                         content: contentEncoded,
                         sha: fileSha
                     })
@@ -380,18 +398,16 @@
 
                 if (response.ok) {
                     const data = await response.json();
-                    fileSha = data.content.sha; // Atualiza o SHA para edições futuras sem precisar recarregar
-                    alert('Sucesso! As pautas foram atualizadas no repositório.');
+                    fileSha = data.content.sha;
+                    alert('Sucesso! As pautas e imagens foram atualizadas.');
                 } else {
-                    const erroData = await response.json();
-                    throw new Error(erroData.message || 'Erro desconhecido');
+                    throw new Error('Falha na API do GitHub.');
                 }
             } catch (error) {
-                console.error(error);
-                alert('Falha ao salvar no GitHub. Verifique o console para mais detalhes.');
+                alert('Erro ao salvar no GitHub. Verifique suas credenciais.');
             } finally {
                 btn.disabled = false;
-                btn.innerHTML = `<i class="fa-solid fa-cloud-arrow-up"></i> <span>Salvar Alterações no Servidor</span>`;
+                btn.innerHTML = `<i class="fa-solid fa-cloud-arrow-up"></i> <span>Salvar Base de Dados</span>`;
             }
         }
 
