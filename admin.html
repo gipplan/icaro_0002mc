@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Í.C.A.R.O. | Admin Panel - Arcos Dorados</title>
+    <title>Í.C.A.R.O. | Editor de Pautas - Arcos Dorados</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
@@ -35,108 +35,157 @@
     </script>
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
 <body class="min-h-full flex flex-col text-[#27251F] antialiased bg-[#F4F5F7]">
 
     <!-- NAVBAR ADMIN -->
     <header class="sticky top-0 z-40 bg-mcd-dark border-b border-gray-800 shadow-md">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
             <div class="flex items-center gap-4">
                 <a href="index.html" class="flex items-center gap-3 text-white hover:text-mcd-yellow transition-colors" title="Voltar ao Dashboard">
                     <i class="fa-solid fa-arrow-left"></i>
                 </a>
                 <div class="h-6 w-[1px] bg-gray-700 hidden sm:block"></div>
                 <div class="flex items-center gap-2">
-                    <span class="bg-mcd-yellow text-mcd-dark font-bold text-xs px-2.5 py-1 rounded-full uppercase tracking-wider">Í.C.A.R.O. ADMIN</span>
-                    <span class="text-xs font-semibold text-gray-400 hidden sm:inline-block">Arcos Dorados Control Panel</span>
+                    <span class="bg-mcd-yellow text-mcd-dark font-bold text-xs px-2.5 py-1 rounded-full uppercase tracking-wider">Í.C.A.R.O. CMS</span>
+                    <span class="text-xs font-semibold text-gray-400 hidden sm:inline-block">Editor de Pautas Arcos Dorados</span>
                 </div>
             </div>
             
             <div class="flex items-center gap-3">
-                <span class="flex items-center gap-2 text-[10px] font-bold text-emerald-400 uppercase tracking-wider bg-emerald-400/10 px-3 py-1.5 rounded-full border border-emerald-400/20">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Sistema Online
-                </span>
+                <button onclick="salvarNoGitHub()" id="btn-save-github" class="bg-mcd-red hover:bg-mcd-red-dark text-white font-bold text-xs px-4 py-2 rounded-lg transition-all shadow-md flex items-center gap-2">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <span class="hidden sm:inline">Salvar Alterações no Servidor</span>
+                    <span class="sm:hidden">Salvar</span>
+                </button>
             </div>
         </div>
     </header>
 
     <!-- ADMIN CONTENT -->
-    <main class="flex-1 max-w-5xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <main class="flex-1 max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
         
-        <div class="mb-8">
-            <h1 class="text-2xl font-extrabold text-gray-900 tracking-tight mb-2">Painel de Controle Í.C.A.R.O.</h1>
-            <p class="text-sm text-gray-600">Central de comandos para disparo manual dos motores de inteligência e varredura da Arcos Dorados.</p>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-4">
+            <div>
+                <h1 class="text-2xl font-extrabold text-gray-900 tracking-tight mb-1">Gerenciador de Oportunidades</h1>
+                <p class="text-sm text-gray-600">Edite, exclua ou ajuste as recomendações que aparecem no painel principal.</p>
+            </div>
+            <div class="bg-white px-4 py-2 rounded-xl border border-gray-200 shadow-sm inline-flex items-center gap-3">
+                <i class="fa-solid fa-database text-gray-400"></i>
+                <div class="flex flex-col">
+                    <span class="text-[10px] font-bold text-gray-400 uppercase">Pautas Ativas</span>
+                    <span class="text-sm font-extrabold text-gray-900" id="total-pautas">0</span>
+                </div>
+            </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- LISTA DE PAUTAS (CMS) -->
+        <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+            <div class="bg-gray-50 border-b border-gray-200 px-6 py-3 flex items-center justify-between">
+                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">Banco de Dados (oportunidades.json)</span>
+                <button onclick="carregarDadosGitHub()" class="text-gray-500 hover:text-mcd-red transition-colors text-xs font-semibold flex items-center gap-1">
+                    <i class="fa-solid fa-rotate-right"></i> Recarregar
+                </button>
+            </div>
             
-            <!-- CARD 1: VARREDURA WEB -->
-            <div class="bg-white rounded-3xl border border-gray-200 shadow-sm p-6 flex flex-col justify-between relative overflow-hidden group">
-                <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-mcd-red-light to-transparent opacity-50 rounded-bl-full pointer-events-none transition-transform group-hover:scale-110"></div>
-                
-                <div>
-                    <div class="w-12 h-12 bg-mcd-red-light text-mcd-red rounded-2xl flex items-center justify-center text-xl mb-4 border border-red-100">
-                        <i class="fa-solid fa-robot"></i>
-                    </div>
-                    <h2 class="text-lg font-bold text-gray-900 mb-2">Forçar Varredura Web</h2>
-                    <p class="text-xs text-gray-600 leading-relaxed mb-6">
-                        Aciona o script <code class="bg-gray-100 px-1.5 py-0.5 rounded text-mcd-red font-mono text-[10px]">gerar_oportunidades.py</code>. 
-                        O Í.C.A.R.O. fará uma varredura imediata no Google buscando por novas notícias da Arcos Dorados, concorrentes e setor QSR, classificando-as no JSON.
-                    </p>
-                </div>
-
-                <div class="pt-4 border-t border-gray-100">
-                    <button onclick="dispararVarreduraWeb()" id="btn-varredura" class="w-full py-3 rounded-xl text-xs font-bold text-white bg-mcd-dark hover:bg-black transition-all flex items-center justify-center gap-2 shadow-md">
-                        <i class="fa-solid fa-bolt"></i>
-                        <span>Iniciar Motor de Busca</span>
-                    </button>
-                </div>
+            <div id="loading-state" class="p-12 text-center">
+                <div class="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-mcd-red mb-4"></div>
+                <p class="text-sm font-semibold text-gray-500">Conectando ao GitHub e baixando pautas...</p>
             </div>
 
-            <!-- CARD 2: CLIPPING BOXNET -->
-            <div class="bg-white rounded-3xl border border-gray-200 shadow-sm p-6 flex flex-col justify-between relative overflow-hidden group">
-                <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-amber-50 to-transparent opacity-80 rounded-bl-full pointer-events-none transition-transform group-hover:scale-110"></div>
-                
-                <div>
-                    <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-xl mb-4 border border-amber-100">
-                        <i class="fa-solid fa-newspaper"></i>
-                    </div>
-                    <h2 class="text-lg font-bold text-gray-900 mb-2">Processar Clipping Boxnet</h2>
-                    <p class="text-xs text-gray-600 leading-relaxed mb-4">
-                        Aciona o robô para ler, analisar e extrair inteligência tática de um relatório da Boxnet fornecido pela agência.
-                    </p>
-                    
-                    <div class="mb-4 relative z-10">
-                        <label class="block text-[10px] font-bold text-gray-500 uppercase tracking-wider mb-1.5">URL do Relatório Boxnet</label>
-                        <input type="url" id="input-url-clipping" placeholder="https://bookweb.boxnet.com.br/..." class="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-xs font-medium focus:outline-none focus:border-mcd-yellow focus:ring-1 focus:ring-mcd-yellow transition-all">
-                    </div>
-                </div>
-
-                <div class="pt-4 border-t border-gray-100 relative z-10">
-                    <button onclick="dispararAnaliseClipping()" id="btn-processar-clipping" class="w-full py-3 rounded-xl text-xs font-bold text-mcd-dark bg-mcd-yellow hover:bg-yellow-500 transition-all flex items-center justify-center gap-2 shadow-md">
-                        <i class="fa-solid fa-file-import"></i>
-                        <span>Extrair Inteligência</span>
-                    </button>
-                </div>
+            <ul id="pautas-list" class="divide-y divide-gray-100 hidden">
+                <!-- Itens injetados via JS -->
+            </ul>
+            
+            <div id="empty-state" class="hidden p-12 text-center">
+                <i class="fa-regular fa-folder-open text-4xl text-gray-300 mb-3"></i>
+                <p class="text-sm font-semibold text-gray-500">Nenhuma pauta encontrada no sistema.</p>
             </div>
-
         </div>
 
         <!-- CONFIGURAÇÕES ALERT -->
-        <div class="mt-8 bg-blue-50 border border-blue-100 rounded-2xl p-5 flex items-start gap-4">
-            <div class="text-blue-500 mt-0.5"><i class="fa-solid fa-circle-info text-lg"></i></div>
+        <div class="mt-8 bg-amber-50 border border-amber-200 rounded-2xl p-5 flex items-start gap-4">
+            <div class="text-amber-500 mt-0.5"><i class="fa-solid fa-triangle-exclamation text-lg"></i></div>
             <div>
-                <h4 class="text-sm font-bold text-blue-900 mb-1">Status de Conexão GitHub Actions</h4>
-                <p class="text-xs text-blue-800/80 leading-relaxed">
-                    Certifique-se de que as variáveis <code class="font-mono bg-blue-100 px-1 rounded">GITHUB_PAT</code>, <code class="font-mono bg-blue-100 px-1 rounded">REPO_OWNER</code> e <code class="font-mono bg-blue-100 px-1 rounded">REPO_NAME</code> estão corretamente configuradas no código-fonte deste painel para que os comandos sejam enviados à infraestrutura do repositório.
+                <h4 class="text-sm font-bold text-amber-900 mb-1">Atenção ao Salvar</h4>
+                <p class="text-xs text-amber-800/80 leading-relaxed">
+                    Certifique-se de configurar as variáveis <code class="font-mono bg-amber-100 px-1 rounded text-amber-900">GITHUB_PAT</code>, <code class="font-mono bg-amber-100 px-1 rounded text-amber-900">REPO_OWNER</code> e <code class="font-mono bg-amber-100 px-1 rounded text-amber-900">REPO_NAME</code> no código-fonte para permitir a edição direta do arquivo. Ao clicar em salvar, a atualização vai direto para o repositório principal.
                 </p>
             </div>
         </div>
 
     </main>
 
-    <!-- SCRIPT DE INTEGRAÇÃO GITHUB -->
+    <!-- MODAL DE EDIÇÃO -->
+    <div id="modal-edit" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-3xl w-full p-6 sm:p-8 shadow-2xl border border-gray-100 my-auto">
+            <div class="flex items-center justify-between mb-6 border-b border-gray-100 pb-4">
+                <h3 class="text-lg font-extrabold text-gray-900">Editar Pauta</h3>
+                <button onclick="fecharModalEdit()" class="text-gray-400 hover:text-gray-600 p-1 bg-gray-100 rounded-full w-8 h-8 flex items-center justify-center transition-colors">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            
+            <form id="edit-form" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Título da Notícia</label>
+                    <input type="text" id="edit-titulo" class="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium focus:outline-none focus:border-mcd-red transition-all">
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Categoria / Frente</label>
+                        <select id="edit-tipo" class="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium focus:outline-none focus:border-mcd-red transition-all">
+                            <option value="regulacao">Regulação & Inst.</option>
+                            <option value="franqueados">Franqueados</option>
+                            <option value="inovacao">Inovação & App</option>
+                            <option value="operacao">Operação & Lojas</option>
+                            <option value="concorrencia">Concorrência (QSR)</option>
+                            <option value="esg">Receita do Futuro (ESG)</option>
+                            <option value="crise">Gestão de Crise</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Data</label>
+                        <input type="text" id="edit-data" placeholder="DD/MM/YYYY" class="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium focus:outline-none focus:border-mcd-red transition-all">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Resumo do Fato</label>
+                    <textarea id="edit-resumo" rows="3" class="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium focus:outline-none focus:border-mcd-red transition-all"></textarea>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-mcd-red uppercase tracking-wider mb-1.5"><i class="fa-solid fa-lightbulb mr-1"></i> Tática Sugerida (Recomendação)</label>
+                    <textarea id="edit-recomendacao" rows="4" class="w-full px-3.5 py-2.5 bg-red-50 border border-red-200 rounded-xl text-sm font-medium focus:outline-none focus:border-mcd-red transition-all text-gray-900"></textarea>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Setor</label>
+                        <input type="text" id="edit-setor" class="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium focus:outline-none focus:border-mcd-red transition-all">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">Link da Notícia</label>
+                        <input type="url" id="edit-link" class="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm font-medium focus:outline-none focus:border-mcd-red transition-all">
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-gray-100 flex items-center justify-end gap-3 mt-6">
+                    <button type="button" onclick="fecharModalEdit()" class="px-5 py-2.5 rounded-xl text-xs font-bold text-gray-600 bg-gray-100 hover:bg-gray-200 transition-all">Cancelar</button>
+                    <button type="button" onclick="salvarEdicaoLocal()" class="px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-mcd-dark hover:bg-black transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-check"></i> Concluir Edição
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- SCRIPT DE INTEGRAÇÃO GITHUB API PARA EDIÇÃO -->
     <script>
         // ==========================================
         // CONFIGURAÇÕES DO GITHUB (EDITAR AQUI)
@@ -144,82 +193,210 @@
         const GITHUB_PAT = "ghp_" + "COLE_O_RESTANTE_DO_SEU_TOKEN_AQUI"; 
         const REPO_OWNER = "SEU_USUARIO_AQUI"; // Ex: gipplan
         const REPO_NAME = "NOME_DO_REPO_MCDONALDS"; // Ex: icaro_mcdonalds
+        const FILE_PATH = "oportunidades.json";
 
-        // 1. FUNÇÃO: DISPARAR VARREDURA WEB (gerar_oportunidades.py)
-        async function dispararVarreduraWeb() {
-            const btn = document.getElementById('btn-varredura');
+        let pautasData = [];
+        let fileSha = "";
+        let indiceEdicaoAtual = -1;
+
+        // Funções para lidar com Base64 e acentos (UTF-8)
+        function b64DecodeUnicode(str) {
+            return decodeURIComponent(atob(str).split('').map(function(c) {
+                return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+            }).join(''));
+        }
+
+        function b64EncodeUnicode(str) {
+            return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function match(p1) {
+                return String.fromCharCode('0x' + p1);
+            }));
+        }
+
+        // 1. CARREGAR DADOS DO GITHUB
+        async function carregarDadosGitHub() {
+            const listContainer = document.getElementById('pautas-list');
+            const loadingState = document.getElementById('loading-state');
+            const emptyState = document.getElementById('empty-state');
             
-            if(!confirm("Deseja iniciar uma nova varredura web? Este processo pode levar alguns minutos.")) return;
-
-            btn.disabled = true;
-            btn.innerHTML = `<i class="fa-solid fa-circle-notch animate-spin"></i> <span>Executando Varredura...</span>`;
+            listContainer.classList.add('hidden');
+            emptyState.classList.add('hidden');
+            loadingState.classList.remove('hidden');
 
             try {
-                // OBS: Ajuste o nome do workflow (.yml) caso o nome do arquivo da action de varredura seja diferente.
-                // Exemplo: 'main.yml' ou 'varredura.yml'
-                const response = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/main.yml/dispatches`, {
-                    method: 'POST',
+                const response = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`, {
                     headers: {
-                        'Accept': 'application/vnd.github+json',
                         'Authorization': `Bearer ${GITHUB_PAT}`,
-                        'X-GitHub-Api-Version': '2022-11-28'
-                    },
-                    body: JSON.stringify({ ref: 'main' })
+                        'Accept': 'application/vnd.github.v3+json'
+                    }
                 });
 
-                if (response.ok || response.status === 204) {
-                    alert('Sucesso! Motor Í.C.A.R.O. acionado. O Dashboard será atualizado com as novas pautas em alguns minutos.');
+                if (response.ok) {
+                    const data = await response.json();
+                    fileSha = data.sha;
+                    const jsonString = b64DecodeUnicode(data.content);
+                    pautasData = JSON.parse(jsonString);
+                    renderizarLista();
                 } else {
-                    throw new Error(`Erro API: Status ${response.status}`);
+                    // Fallback para leitura local caso não encontre via API
+                    console.warn("Lendo arquivo local por falha na API.");
+                    const resLocal = await fetch(FILE_PATH + '?t=' + Date.now());
+                    pautasData = await resLocal.json();
+                    renderizarLista();
                 }
-            } catch (erro) {
-                console.error(erro);
-                alert('Falha ao acionar a Action. Verifique seu GITHUB_PAT e o nome do repositório/workflow no código fonte.');
-            } finally {
-                btn.disabled = false;
-                btn.innerHTML = `<i class="fa-solid fa-bolt"></i> <span>Iniciar Motor de Busca</span>`;
+            } catch (error) {
+                console.error("Erro ao carregar dados:", error);
+                alert("Erro ao conectar ao banco de dados. Verifique o token e as permissões.");
+                loadingState.classList.add('hidden');
+                emptyState.classList.remove('hidden');
             }
         }
 
-        // 2. FUNÇÃO: DISPARAR PROCESSAMENTO BOXNET
-        async function dispararAnaliseClipping() {
-            const urlInput = document.getElementById('input-url-clipping').value.trim();
-            const btn = document.getElementById('btn-processar-clipping');
+        // 2. RENDERIZAR LISTA NO HTML
+        function renderizarLista() {
+            document.getElementById('loading-state').classList.add('hidden');
+            const listContainer = document.getElementById('pautas-list');
+            const emptyState = document.getElementById('empty-state');
+            document.getElementById('total-pautas').innerText = pautasData.length;
 
-            if (!urlInput.includes('boxnet.com.br')) {
-                alert('Por favor, insira uma URL válida da Boxnet.');
+            if (pautasData.length === 0) {
+                listContainer.classList.add('hidden');
+                emptyState.classList.remove('hidden');
                 return;
             }
 
-            btn.disabled = true;
-            btn.innerHTML = `<i class="fa-solid fa-circle-notch animate-spin"></i> <span>Enviando para Análise...</span>`;
+            listContainer.innerHTML = '';
+            pautasData.forEach((pauta, index) => {
+                const tipoBadge = gerarBadgeCategoria(pauta.tipo);
+                const li = document.createElement('li');
+                li.className = "px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition-colors group";
+                li.innerHTML = `
+                    <div class="flex-1 pr-4">
+                        <div class="flex items-center gap-2 mb-1">
+                            ${tipoBadge}
+                            <span class="text-[10px] text-gray-400 font-bold">${pauta.data || ''}</span>
+                        </div>
+                        <h4 class="text-sm font-bold text-gray-900 group-hover:text-mcd-red transition-colors line-clamp-1">${pauta.titulo}</h4>
+                        <p class="text-xs text-gray-500 line-clamp-1 mt-0.5">${pauta.recomendacao || 'Sem recomendação'}</p>
+                    </div>
+                    <div class="flex items-center gap-2 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
+                        <button onclick="abrirModalEdit(${index})" class="w-8 h-8 rounded-full bg-blue-50 text-blue-600 hover:bg-blue-100 flex items-center justify-center transition-colors" title="Editar">
+                            <i class="fa-solid fa-pen text-xs"></i>
+                        </button>
+                        <button onclick="excluirPauta(${index})" class="w-8 h-8 rounded-full bg-red-50 text-red-600 hover:bg-red-100 flex items-center justify-center transition-colors" title="Excluir">
+                            <i class="fa-solid fa-trash text-xs"></i>
+                        </button>
+                    </div>
+                `;
+                listContainer.appendChild(li);
+            });
 
-            try {
-                // OBS: Ajuste o nome do workflow (.yml) caso seja diferente.
-                const response = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/processar_clipping.yml/dispatches`, {
-                    method: 'POST',
-                    headers: {
-                        'Accept': 'application/vnd.github+json',
-                        'Authorization': `Bearer ${GITHUB_PAT}`,
-                        'X-GitHub-Api-Version': '2022-11-28'
-                    },
-                    body: JSON.stringify({ ref: 'main', inputs: { clipping_url: urlInput } })
-                });
+            emptyState.classList.add('hidden');
+            listContainer.classList.remove('hidden');
+        }
 
-                if (response.ok || response.status === 204) {
-                    alert('Clipping enviado com sucesso! O robô analisará as pautas e adicionará as recomendações ao Dashboard em breve.');
-                    document.getElementById('input-url-clipping').value = '';
-                } else {
-                    throw new Error(`Erro API: Status ${response.status}`);
-                }
-            } catch (erro) {
-                console.error(erro);
-                alert('Falha ao acionar a Action do Boxnet. Verifique suas credenciais do GitHub no código fonte.');
-            } finally {
-                btn.disabled = false;
-                btn.innerHTML = `<i class="fa-solid fa-file-import"></i> <span>Extrair Inteligência</span>`;
+        function gerarBadgeCategoria(tipo) {
+            const configs = {
+                regulacao: { b: 'bg-amber-100', t: 'text-amber-800', l: 'Regulação' },
+                franqueados: { b: 'bg-orange-100', t: 'text-orange-800', l: 'Franqueados' },
+                inovacao: { b: 'bg-purple-100', t: 'text-purple-800', l: 'Inovação' },
+                operacao: { b: 'bg-cyan-100', t: 'text-cyan-800', l: 'Operação' },
+                concorrencia: { b: 'bg-blue-100', t: 'text-blue-800', l: 'Concorrência' },
+                esg: { b: 'bg-emerald-100', t: 'text-emerald-800', l: 'ESG' },
+                crise: { b: 'bg-rose-100', t: 'text-rose-800', l: 'Crise' }
+            };
+            const c = configs[tipo] || configs.regulacao;
+            return `<span class="${c.b} ${c.t} text-[9px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">${c.l}</span>`;
+        }
+
+        // 3. FUNÇÕES DE EDIÇÃO LOCAL
+        function abrirModalEdit(index) {
+            indiceEdicaoAtual = index;
+            const pauta = pautasData[index];
+            
+            document.getElementById('edit-titulo').value = pauta.titulo || '';
+            document.getElementById('edit-tipo').value = pauta.tipo || 'regulacao';
+            document.getElementById('edit-data').value = pauta.data || '';
+            document.getElementById('edit-resumo').value = pauta.resumo_fato || pauta.descricao || '';
+            document.getElementById('edit-recomendacao').value = pauta.recomendacao || '';
+            document.getElementById('edit-setor').value = pauta.setor || '';
+            document.getElementById('edit-link').value = pauta.link_noticia || '';
+
+            document.getElementById('modal-edit').classList.remove('hidden');
+        }
+
+        function fecharModalEdit() {
+            document.getElementById('modal-edit').classList.add('hidden');
+            indiceEdicaoAtual = -1;
+        }
+
+        function salvarEdicaoLocal() {
+            if (indiceEdicaoAtual > -1) {
+                pautasData[indiceEdicaoAtual].titulo = document.getElementById('edit-titulo').value;
+                pautasData[indiceEdicaoAtual].tipo = document.getElementById('edit-tipo').value;
+                pautasData[indiceEdicaoAtual].data = document.getElementById('edit-data').value;
+                pautasData[indiceEdicaoAtual].resumo_fato = document.getElementById('edit-resumo').value;
+                pautasData[indiceEdicaoAtual].recomendacao = document.getElementById('edit-recomendacao').value;
+                pautasData[indiceEdicaoAtual].setor = document.getElementById('edit-setor').value;
+                pautasData[indiceEdicaoAtual].link_noticia = document.getElementById('edit-link').value;
+                
+                renderizarLista();
+                fecharModalEdit();
             }
         }
+
+        function excluirPauta(index) {
+            if (confirm("Tem certeza que deseja excluir esta pauta? A alteração só será definitiva ao salvar no servidor.")) {
+                pautasData.splice(index, 1);
+                renderizarLista();
+            }
+        }
+
+        // 4. SALVAR NO GITHUB
+        async function salvarNoGitHub() {
+            const btn = document.getElementById('btn-save-github');
+            
+            if(!confirm("Deseja publicar essas alterações diretamente no repositório? O Dashboard será atualizado na hora.")) return;
+
+            btn.disabled = true;
+            btn.innerHTML = `<i class="fa-solid fa-circle-notch animate-spin"></i> <span>Salvando...</span>`;
+
+            try {
+                const jsonAtualizado = JSON.stringify(pautasData, null, 2);
+                const contentEncoded = b64EncodeUnicode(jsonAtualizado);
+
+                const response = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Authorization': `Bearer ${GITHUB_PAT}`,
+                        'Accept': 'application/vnd.github.v3+json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        message: "📝 Edição manual de pautas via I.C.A.R.O. CMS",
+                        content: contentEncoded,
+                        sha: fileSha
+                    })
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    fileSha = data.content.sha; // Atualiza o SHA para edições futuras sem precisar recarregar
+                    alert('Sucesso! As pautas foram atualizadas no repositório.');
+                } else {
+                    const erroData = await response.json();
+                    throw new Error(erroData.message || 'Erro desconhecido');
+                }
+            } catch (error) {
+                console.error(error);
+                alert('Falha ao salvar no GitHub. Verifique o console para mais detalhes.');
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = `<i class="fa-solid fa-cloud-arrow-up"></i> <span>Salvar Alterações no Servidor</span>`;
+            }
+        }
+
+        // Inicializar
+        document.addEventListener('DOMContentLoaded', carregarDadosGitHub);
     </script>
 </body>
 </html>
