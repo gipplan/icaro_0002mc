@@ -184,16 +184,22 @@
             default: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=2000&auto=format&fit=crop'
         };
 
-        function b64DecodeUnicode(str) {
-            return decodeURIComponent(atob(str).split('').map(function(c) {
-                return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-            }).join(''));
+    function b64DecodeUnicode(str) {
+            const binString = atob(str);
+            const bytes = new Uint8Array(binString.length);
+            for (let i = 0; i < binString.length; i++) {
+                bytes[i] = binString.charCodeAt(i);
+            }
+            return new TextDecoder('utf-8').decode(bytes);
         }
 
-        function b64EncodeUnicode(str) {
-            return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function match(p1) {
-                return String.fromCharCode('0x' + p1);
-            }));
+      function b64EncodeUnicode(str) {
+            const bytes = new TextEncoder().encode(str);
+            let binString = '';
+            for (let i = 0; i < bytes.byteLength; i++) {
+                binString += String.fromCharCode(bytes[i]);
+            }
+            return btoa(binString);
         }
 
         function parseDataBR(dataStr) {
