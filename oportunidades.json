@@ -1,5 +1,137 @@
 [
   {
+    "titulo": "Grupo Gennius, dono do Habib's, obtém proteção judicial contra cobrança de dívida de R$ 312 milhões",
+    "resumo_fato": "O controlador das redes Habib's e Ragazzo conseguiu uma tutela cautelar na Justiça de São Paulo que suspende a cobrança de suas dívidas por 60 dias, buscando evitar um processo de recuperação judicial em meio à crise no varejo alimentar [cite: 2.4.2].",
+    "recomendacao": "Blindando a reputação do modelo de franquias de QSR no Brasil ao estruturar um posicionamento focado na resiliência e saúde financeira da nossa rede de franqueados, demonstrando que a governança corporativa e o suporte contínuo da Arcos Dorados garantem a sustentabilidade do negócio mesmo em momentos de volatilidade econômica do varejo.",
+    "tipo": "crise",
+    "data": "18/08/2026",
+    "setor": "Varejo Alimentar / Investidor10",
+    "marcas": [
+      "Grupo Gennius",
+      "Habib's",
+      "Arcos Dorados"
+    ],
+    "produtos": [
+      "Toolkit de Gestão de Crise para Franqueados",
+      "Positioning Paper de Resiliência de Rede"
+    ],
+    "link_noticia": "https://investidor10.com.br/noticias/crise-no-varejo-gigante-do-fast-food-corre-para-evitar-recuperacao-judicial-115392/",
+    "imagem": ""
+  },
+  {
+    "titulo": "Zamp reduz prejuízo no segundo trimestre de 2026, mas dívida líquida atinge R$ 1,2 bilhão",
+    "resumo_fato": "A operadora do Burger King, Popeyes, Starbucks e Subway no Brasil registrou prejuízo líquido de R$ 44,8 milhões no Q2 2026 (melhora frente ao ano anterior), mas reportou um endividamento líquido bilionário em seu balanço [cite: 1.3.1].",
+    "recomendacao": "Reafirmando nossa liderança financeira e escala de mercado de forma reativa, focando na divulgação de nossos próprios resultados de crescimento orgânico e na capacidade de expansão autofinanciada (sem endividamento excessivo), mantendo o tom corporativo elevado e focado em valor para o acionista.",
+    "tipo": "concorrencia",
+    "data": "18/08/2026",
+    "setor": "Finanças / UOL Economia",
+    "marcas": [
+      "Zamp",
+      "Burger King",
+      "Arcos Dorados"
+    ],
+    "produtos": [
+      "Whitepaper de Impacto Setorial",
+      "Op-Ed C-Level sobre Eficiência de Capital"
+    ],
+    "link_noticia": "https://economia.uol.com.br/noticias/redacao/2026/08/07/dona-do-burger-king-corta-prejuizo-mas-divida-liquida-vai-a-r-12-bi.htm",
+    "imagem": ""
+  },
+  {
+    "titulo": "Estudo do WRI Brasil defende unificação de sistemas de rastreabilidade para carne e soja",
+    "resumo_fato": "Um relatório do WRI Brasil analisou 21 iniciativas de monitoramento socioambiental e propôs um protocolo nacional integrado para conectar sistemas de rastreio de carne bovina e soja, visando atender às exigências de mercados como China e União Europeia [cite: 2.2.8].",
+    "recomendacao": "Consolidando nossa liderança em sustentabilidade no agronegócio ao lançar um 'Dossiê de Rastreabilidade' que demonstre como a Arcos Dorados já utiliza a tecnologia Agrotools para monitorar 100% da carne bovina livre de desmatamento, antecipando-se aos debates de integração de sistemas propostos pelo WRI.",
+    "tipo": "esg",
+    "data": "18/08/2026",
+    "setor": "Agronegócio / O Eco",
+    "marcas": [
+      "WRI Brasil",
+      "Arcos Dorados"
+    ],
+    "produtos": [
+      "Dossiê de Rastreabilidade",
+      "Press Tour Executivo B2B focado em Agro",
+      "Positioning Paper"
+    ],
+    "link_noticia": "https://oeco.org.br/noticias/rastreabilidade-da-soja-e-da-carne-esbarra-na-falta-de-integracao/",
+    "imagem": ""
+  },
+  {
+    "titulo": "Estudo do Ministério do Trabalho aponta alta rotatividade de jovens da Geração Z no mercado brasileiro",
+    "resumo_fato": "O Diagnóstico da Juventude Brasileira revelou que 25% dos jovens de 25 a 29 anos e 38,2% dos de 18 a 24 anos deixam seus empregos em menos de um ano, evidenciando desafios de retenção e inserção profissional dessa geração [cite: 2.1.2].",
+    "recomendacao": "Posicionando a Arcos Dorados como o porto seguro da Geração Z no mercado de trabalho através de um manifesto de liderança inclusiva assinado pelo CHRO, destacando nossos planos de carreira estruturados e programas de retenção que combatem a rotatividade juvenil precoce no país.",
+    "tipo": "esg",
+    "data": "18/08/2026",
+    "setor": "Empregabilidade / Folha de S.Paulo",
+    "marcas": [
+      "Ministério do Trabalho",
+      "Arcos Dorados"
+    ],
+    "produtos": [
+      "Manifesto de Liderança Inclusiva",
+      "Fórum Proprietário Future of Work Latam",
+      "Artigos de Opinião via CHRO"
+    ],
+    "link_noticia": "https://www1.folha.uol.com.br/mercado/2026/06/25-dos-jovens-do-inicio-da-geracao-z-deixa-emprego-antes-de-completar-um-ano.shtml",
+    "imagem": ""
+  },
+  {
+    "titulo": "Anvisa abre processo regulatório para atualizar normas de propaganda de alimentos e medicamentos",
+    "resumo_fato": "A diretoria colegiada da Anvisa aprovou por unanimidade a abertura de processos para revisar as regras de publicidade de alimentos e remédios, visando adequá-las ao avanço do e-commerce, redes sociais e marketing de influenciadores [cite: 2.3.2].",
+    "recomendacao": "Liderando um comitê técnico preventivo de compliance publicitário para mapear o impacto das novas diretrizes da Anvisa sobre marketing de influência e canais digitais, garantindo que a comunicação de nossos produtos continue rigorosamente pautada pela transparência e pelo respeito às normas regulatórias.",
+    "tipo": "regulacao",
+    "data": "18/08/2026",
+    "setor": "Assuntos Regulatórios / Poder360",
+    "marcas": [
+      "Anvisa",
+      "Arcos Dorados"
+    ],
+    "produtos": [
+      "Infográfico de Defesa Reativa",
+      "Comitê de Compliance Publicitário"
+    ],
+    "link_noticia": "https://www.poder360.com.br/poder-saude/anvisa-abre-processo-para-revisar-propaganda-de-alimentos-e-remedios/",
+    "imagem": ""
+  },
+  {
+    "titulo": "Arcos Dorados lança portal de Real Estate para acelerar expansão de restaurantes no Brasil",
+    "resumo_fato": "A Arcos Dorados disponibilizou um canal online para proprietários cadastrarem terrenos elegíveis para novas unidades do McDonald's, focando em pontos estratégicos de alto fluxo e drive-thru, alinhado ao plano de abrir até 115 lojas na região em 2026.",
+    "recomendacao": "Desenvolvendo um posicionamento de liderança imobiliária digital que conecte a busca por terrenos via inteligência de dados à expansão de franqueados locais, demonstrando a solidez financeira e a atratividade do modelo de negócios da Arcos Dorados sem depender de capital externo.",
+    "tipo": "inovacao",
+    "data": "18/08/2026",
+    "setor": "Real Estate / Portal Terra da Luz",
+    "marcas": [
+      "Arcos Dorados",
+      "McDonald's"
+    ],
+    "produtos": [
+      "Thought Leadership B2B em Expansão",
+      "Plataforma Digital de Real Estate"
+    ],
+    "link_noticia": "https://portalterradaluz.com.br/economia/mcdonalds-abre-cadastro-para-novos-terrenos-no-brasil/",
+    "imagem": ""
+  },
+  {
+    "titulo": "McDia Feliz 2026 mobiliza marcas e traz Cafu como embaixador para apoiar saúde e educação infantojuvenil",
+    "resumo_fato": "A edição de 2026 do McDia Feliz ocorre no dia 22 de agosto, destinando a arrecadação do Big Mac para a Casa Ronald McDonald e o Instituto Ayrton Senna [cite: 1.2.2]. Liderada pelo pentacampeão Cafu, a campanha foca na venda antecipada de tíquetes digitais até 19 de agosto [cite: 1.2.2].",
+    "recomendacao": "Orquestrando uma mobilização de alta capilaridade via Dark Social com franqueados e parceiros corporativos, utilizando um Toolkit Estratégico para engajar comunidades locais e impulsionar a venda de tíquetes digitais antecipados no aplicativo e canais parceiros, visando superar o recorde histórico de R$ 28 milhões.",
+    "tipo": "esg",
+    "data": "18/08/2026",
+    "setor": "Terceiro Setor / Propmark",
+    "marcas": [
+      "McDonald's",
+      "Casa Ronald McDonald",
+      "Instituto Ayrton Senna"
+    ],
+    "produtos": [
+      "Toolkit Estratégico para Franqueados",
+      "Pitch Deck de Captação B2B",
+      "Estratégia de Amplificação em Canais Fechados"
+    ],
+    "link_noticia": "https://propmark.com.br/mcdia-feliz-reune-marcas-em-mobilizacao-para-edicao-de-2026/",
+    "imagem": ""
+  },
+  {
     "titulo": "Legislação de Rotulagem de Carnes no Brasil Distingue Produtos In Natura e Processados",
     "resumo_fato": "A legislação brasileira de rotulagem de carnes, regulada pela Anvisa e pelo MAPA, estabelece distinções claras entre carne in natura (ingrediente único) e produtos cárneos processados (como hambúrgueres industrializados), que exigem lista de ingredientes detalhada, tabela nutricional e rotulagem frontal.",
     "recomendacao": "Garantindo conformidade regulatória absoluta e transparência inegociável com o consumidor ao alinhar toda a comunicação de produtos às diretrizes do MAPA e da Anvisa sobre rotulagem de carnes, reforçando tecnicamente o uso dos termos oficiais 'carne 100% bovina', 'sem corantes e aromas artificiais' e 'preparada na hora' para blindar a marca contra crises de nomenclatura ou desinformação nutricional.",
