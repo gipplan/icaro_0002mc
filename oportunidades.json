@@ -1,5 +1,149 @@
 [
   {
+    "titulo": "Burger King foca em modernização de lojas físicas nos EUA para recuperar terreno",
+    "resumo_fato": "A Restaurant Brands International (RBI), dona do Burger King, anunciou planos para modernizar de 85% a 90% de suas lojas nos EUA até 2028, integrando totens digitais, drive-thrus mais rápidos e áreas exclusivas para retirada de pedidos via aplicativo.",
+    "recomendacao": "Reafirmando a vanguarda tecnológica do McDonald's no Brasil ao evidenciar a consolidação do nosso modelo EOTF (Experience of the Future), demonstrando que a modernização de lojas e a integração multicanal, que a concorrência ainda planeja implementar, já são uma realidade operacional madura em nossa rede.",
+    "tipo": "concorrencia",
+    "data": "19/08/2026",
+    "setor": "QSR / Inovação no Varejo",
+    "marcas": [
+      "Burger King",
+      "McDonald's",
+      "Zamp"
+    ],
+    "produtos": [
+      "Whitepaper de Impacto Setorial",
+      "Imersão Exclusiva de Influenciadores"
+    ],
+    "link_noticia": "https://braziljournal.com/a-virada-do-burger-king-nos-eua/",
+    "imagem": ""
+  },
+  {
+    "titulo": "Corte de Santiago multa Arcos Dorados por descumprimento de feriado obrigatório no Chile",
+    "resumo_fato": "A Corte de Apelações de Santiago manteve uma multa contra a Arcos Dorados Chile por descumprir as normas trabalhistas referentes ao feriado obrigatório e irrenunciável de Fiestas Patrias para uma funcionária da rede.",
+    "recomendacao": "Mitigando potenciais impactos reputacionais na marca empregadora no Brasil por meio de um posicionamento reativo e transparente, reafirmando o rigoroso cumprimento das legislações trabalhistas locais e a valorização contínua do bem-estar de nossos colaboradores.",
+    "tipo": "crise",
+    "data": "19/08/2026",
+    "setor": "Jurídico / Relações Trabalhistas",
+    "marcas": [
+      "Arcos Dorados",
+      "McDonald's"
+    ],
+    "produtos": [
+      "Infográfico de Defesa Reativa",
+      "Manifesto de Liderança Inclusiva"
+    ],
+    "link_noticia": "https://www.cooperativa.cl/noticias/pais/trabajo/tribunales/corte-condeno-a-mcdonald-s-por-no-respetar-feriados-irrenunciables/2026-08-18/190924.html",
+    "imagem": ""
+  },
+  {
+    "titulo": "Carne brasileira fica livre de tarifa dos EUA, mas pressões por rastreabilidade aumentam",
+    "resumo_fato": "Apesar de a carne bovina brasileira ter sido isenta de uma sobretaxa de 25% pelos EUA, o setor enfrenta crescente pressão internacional de ONGs e órgãos reguladores para comprovar a rastreabilidade total dos rebanhos e mitigar riscos de desmatamento.",
+    "recomendacao": "Estruturando um ecossistema de comunicação corporativa focado na rastreabilidade total da cadeia produtiva, evidenciando nossa Política de Compra de Carne Bovina Livre de Desmatamento e o monitoramento via Agrotools como referências de conformidade socioambiental frente às novas exigências regulatórias globais.",
+    "tipo": "regulacao",
+    "data": "19/08/2026",
+    "setor": "Agronegócio / Sustentabilidade",
+    "marcas": [
+      "Arcos Dorados",
+      "McDonald's",
+      "Agrotools"
+    ],
+    "produtos": [
+      "Dossiê de Rastreabilidade",
+      "Positioning Paper",
+      "Press Tour Executivo B2B"
+    ],
+    "link_noticia": "https://www.oeco.org.br/noticias/carne-brasileira-fica-livre-de-tarifa-dos-eua-apesar-de-disputa-ambiental/",
+    "imagem": ""
+  },
+  {
+    "titulo": "Redes de alimentação adotam gestão centralizada para expandir sem perder controle operacional",
+    "resumo_fato": "Em um cenário de forte crescimento do franchising de alimentação no Brasil, marcas do setor recorrem a plataformas de tecnologia integradas e gestão centralizada para garantir a padronização de cardápios, preços e processos durante a expansão.",
+    "recomendacao": "Fortalecendo a governança e o Same Store Sales dos franqueados ao demonstrar como a padronização tecnológica e a gestão centralizada da Arcos Dorados reduzem riscos operacionais e garantem a consistência da marca em escala nacional.",
+    "tipo": "franqueados",
+    "data": "19/08/2026",
+    "setor": "Franchising / Tecnologia Operacional",
+    "marcas": [
+      "Arcos Dorados",
+      "McDonald's",
+      "ABF"
+    ],
+    "produtos": [
+      "Toolkit Estratégico para Franqueados",
+      "Whitepaper de Impacto Setorial"
+    ],
+    "link_noticia": "https://www.redebrasil.com.br/redes-de-alimentacao-expandem-sem-errar-a-gestao/",
+    "imagem": ""
+  },
+  {
+    "titulo": "Zamp abre inscrições para Programa de Estágio 2027 com foco em aceleração de carreira",
+    "resumo_fato": "A Zamp, operadora do Burger King, Popeyes, Subway e Starbucks no Brasil, abriu vagas para seu programa de estágio de 2027 com bolsa-auxílio de R$ 3,5 mil e foco no desenvolvimento acelerado para preparar estudantes para posições de liderança.",
+    "recomendacao": "Evidenciando a força do McDonald's como o maior gerador de primeiro emprego e líder em diversidade corporativa no Brasil, neutralizando de forma indireta as iniciativas de atração de talentos da concorrência através da promoção de debates estruturados sobre o futuro do trabalho para a Geração Z.",
+    "tipo": "concorrencia",
+    "data": "19/08/2026",
+    "setor": "Recursos Humanos / Empregabilidade",
+    "marcas": [
+      "Zamp",
+      "Burger King",
+      "Popeyes",
+      "Subway",
+      "Starbucks",
+      "McDonald's"
+    ],
+    "produtos": [
+      "Manifesto de Liderança Inclusiva",
+      "Fórum Proprietário",
+      "Artigos de Opinião via CHRO"
+    ],
+    "link_noticia": "https://www.folhadealphaville.com.br/empresas/zamp-zurich-e-shopee-abrem-vagas-de-estagio-e-trainee-em-sao-paulo",
+    "imagem": ""
+  },
+  {
+    "titulo": "Arcos Dorados registra receita recorde de US$ 1,3 bilhão no segundo trimestre de 2026",
+    "resumo_fato": "A Arcos Dorados apresentou forte crescimento financeiro no Q2 2026, impulsionada pelo aumento de 15,3% nas vendas comparáveis e pela forte adoção dos canais digitais, que já representam 66% das vendas totais da companhia na América Latina.",
+    "recomendacao": "Posicionando a liderança financeira da Arcos Dorados por meio de narrativas de eficiência operacional e escala, destacando a maturidade dos canais digitais e a expansão física planejada de 105 a 115 novos restaurantes como vetores de rentabilidade e geração de valor a longo prazo.",
+    "tipo": "operacao",
+    "data": "19/08/2026",
+    "setor": "Finanças / Varejo Alimentar",
+    "marcas": [
+      "Arcos Dorados",
+      "McDonald's"
+    ],
+    "produtos": [
+      "Op-Ed C-Level",
+      "Whitepaper de Impacto Setorial",
+      "Painel Exclusivo para Stakeholders e Investidores"
+    ],
+    "link_noticia": "https://www.morningstar.com/news/pr-newswire/20260813ny69466/arcos-dorados-reports-second-quarter-2026-financial-results",
+    "imagem": ""
+  },
+  {
+    "titulo": "McDia Feliz 2026 mobiliza grandes marcas em prol da saúde infantojuvenil",
+    "resumo_fato": "A reta final do McDia Feliz 2026, marcado para o dia 22 de agosto, conta com o apoio de grandes marcas como Nubank, Shopee, Ri Happy, Inter, Sympla, Livelo e Vivo para ampliar a venda de tíquetes digitais e apoiar 69 projetos de saúde e educação infantojuvenil no Brasil.",
+    "recomendacao": "Orquestrando uma mobilização nacional de alta capilaridade focada no 'Patrocínio Feliz' e parcerias corporativas de grande escala, alavancando as vendas antecipadas de tíquetes digitais via canais fechados e plataformas parceiras como a Shopee para superar o recorde histórico de arrecadação e reativar o orgulho interno.",
+    "tipo": "esg",
+    "data": "19/08/2026",
+    "setor": "Terceiro Setor / Responsabilidade Social",
+    "marcas": [
+      "McDonald's",
+      "Arcos Dorados",
+      "Shopee",
+      "Nubank",
+      "Ri Happy",
+      "Inter",
+      "Sympla",
+      "Livelo",
+      "Vivo"
+    ],
+    "produtos": [
+      "Toolkit Estratégico para Franqueados",
+      "Pitch Deck de Captação B2B",
+      "Estratégia de Amplificação em Canais Fechados"
+    ],
+    "link_noticia": "https://propmark.com.br/mcdia-feliz-reune-marcas-em-mobilizacao-para-edicao-de-2026/",
+    "imagem": ""
+  },
+  {
     "titulo": "Grupo Gennius, dono do Habib's, obtém proteção judicial contra cobrança de dívida de R$ 312 milhões",
     "resumo_fato": "O controlador das redes Habib's e Ragazzo conseguiu uma tutela cautelar na Justiça de São Paulo que suspende a cobrança de suas dívidas por 60 dias, buscando evitar um processo de recuperação judicial em meio à crise no varejo alimentar [cite: 2.4.2].",
     "recomendacao": "Blindando a reputação do modelo de franquias de QSR no Brasil ao estruturar um posicionamento focado na resiliência e saúde financeira da nossa rede de franqueados, demonstrando que a governança corporativa e o suporte contínuo da Arcos Dorados garantem a sustentabilidade do negócio mesmo em momentos de volatilidade econômica do varejo.",
