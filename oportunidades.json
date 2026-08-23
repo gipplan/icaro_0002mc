@@ -1,5 +1,159 @@
 [
   {
+    "titulo": "Relatório aponta que JBS adquiriu gado de fazendas na Amazônia com alertas de desmatamento e queimadas",
+    "resumo_fato": "Uma investigação da Mighty Earth revelou que a JBS e outros frigoríficos compraram gado de propriedades na Amazônia associadas a mais de 109 mil hectares de desmatamento ilegal entre 2023 e 2025. A JBS foi apontada como responsável por 62% desse total, levantando preocupações sobre a rastreabilidade da cadeia da carne bovina no Brasil.",
+    "recomendacao": "Blindando a reputação corporativa da Arcos Dorados contra crises de cadeia de suprimentos ao ativar imediatamente nosso Dossiê de Rastreabilidade, comprovando por meio do monitoramento via satélite da Agrotools que 100% da nossa carne bovina é livre de desmatamento e desvinculada de qualquer planta sob investigação socioambiental.",
+    "tipo": "crise",
+    "data": "23/08/2026",
+    "setor": "Sustentabilidade / Crise",
+    "marcas": [
+      "JBS",
+      "Mighty Earth",
+      "Arcos Dorados"
+    ],
+    "produtos": [
+      "Dossiê de Rastreabilidade",
+      "Infográfico de Defesa Reativa Issue Management"
+    ],
+    "link_noticia": "https://www.mightyearth.org/pt/jbs-pega-comprando-gado-de-fazendas-na-amazonia-com-alertas-recentes-de-desmatamento-e-queimadas/",
+    "imagem": ""
+  },
+  {
+    "titulo": "Estudo do MTE e CIEE aponta que permanência no primeiro emprego é o principal desafio dos jovens no Brasil",
+    "resumo_fato": "Um diagnóstico inédito do Ministério do Trabalho e Emprego (MTE) e do CIEE, baseado na PNAD Contínua do primeiro trimestre de 2026, revelou que, embora o desemprego jovem (18-24 anos) tenha caído para 13,8%, o grande desafio atual é a permanência no primeiro emprego, com a maioria dos jovens ficando menos de um ano na vaga. Além disso, o país registra 6,2 milhões de jovens 'nem-nem' (que não estudam nem trabalham).",
+    "recomendacao": "Capitalizando nossa força como a maior geradora de primeiro emprego do país para liderar o debate nacional sobre o futuro do trabalho e a inclusão social, lançando um Manifesto de Liderança Inclusiva assinado pelo nosso CHRO e destacando nossas certificações de diversidade para combater a alta rotatividade juvenil apontada pelo estudo.",
+    "tipo": "esg",
+    "data": "23/08/2026",
+    "setor": "Empregabilidade / Social",
+    "marcas": [
+      "Ministério do Trabalho e Emprego",
+      "CIEE",
+      "Arcos Dorados"
+    ],
+    "produtos": [
+      "Manifesto de Liderança Inclusiva",
+      "Fórum Proprietário Future of Work Latam",
+      "Artigos de Opinião via CHRO"
+    ],
+    "link_noticia": "https://www.ciee.org.br/raio-x-do-trabalho-estudo-inedito-do-ciee-e-mte/",
+    "imagem": ""
+  },
+  {
+    "titulo": "McDia Feliz 2026 acontece com Cafu como embaixador nacional da campanha",
+    "resumo_fato": "O McDonald's realizou mais uma edição do McDia Feliz no Brasil, com o ex-jogador Cafu liderando a campanha 'Com Big Mac a gente vira o jogo'. A renda obtida com as vendas do Big Mac (descontados impostos) em todos os restaurantes do país será revertida para a Casa Ronald McDonald e o Instituto Ayrton Senna.",
+    "recomendacao": "Orquestrando uma mobilização de alta canilaridade focada no engajamento comunitário e no orgulho interno, ativando um toolkit estratégico para franqueados e um pitch deck de captação B2B com grandes corporações para ampliar a venda antecipada de Big Macs via canais digitais, potencializando o impacto social ao lado do embaixador Cafu.",
+    "tipo": "esg",
+    "data": "23/08/2026",
+    "setor": "Social / Terceiro Setor",
+    "marcas": [
+      "McDonald's",
+      "Arcos Dorados",
+      "Instituto Ronald McDonald",
+      "Instituto Ayrton Senna"
+    ],
+    "produtos": [
+      "Toolkit Estratégico para Franqueados",
+      "Pitch Deck de Captação B2B",
+      "Estratégia de Amplificação em Canais Fechados"
+    ],
+    "link_noticia": "https://www.meioemensagem.com.br/comunicacao/cafu-e-o-embaixador-da-campanha-2026-do-mcdia-feliz",
+    "imagem": ""
+  },
+  {
+    "titulo": "Zamp reduz prejuízo no segundo trimestre de 2026, mas dívida líquida atinge R$ 1,2 bilhão",
+    "resumo_fato": "A Zamp, operadora do Burger King, Popeyes, Starbucks e Subway no Brasil, reportou redução no seu prejuízo líquido sem IFRS 16 para R$ 44,8 milhões no segundo trimestre de 2026 (ante R$ 69,9 milhões no mesmo período de 2025). No entanto, a dívida líquida da companhia subiu para R$ 1,2 bilhão, refletindo os investimentos na integração das novas marcas e expansão.",
+    "recomendacao": "Mantendo nossa postura ética de líder de categoria e evitando qualquer engajamento em guerrilha baixa sobre o endividamento do concorrente, ao focar nossa narrativa institucional na solidez financeira da Arcos Dorados e na nossa capacidade contínua de expansão sustentável sem comprometer a saúde financeira do ecossistema de franquias.",
+    "tipo": "concorrencia",
+    "data": "23/08/2026",
+    "setor": "Finanças / Varejo Alimentar",
+    "marcas": [
+      "Zamp",
+      "Burger King",
+      "Popeyes",
+      "Starbucks",
+      "Subway"
+    ],
+    "produtos": [
+      "Dossiê de Inteligência Competitiva",
+      "Q&A de Defesa para Relações com Investidores"
+    ],
+    "link_noticia": "https://economia.uol.com.br/noticias/redacao/2026/08/07/dona-do-burger-king-corta-prejuizo-mas-divida-liquida-vai-a-r-12-bi.htm",
+    "imagem": ""
+  },
+  {
+    "titulo": "Setor de Food Service movimenta R$ 287,9 bilhões no Brasil",
+    "resumo_fato": "O segmento de food service (alimentação fora do lar) movimentou R$ 287,9 bilhões no Brasil, representando 28,3% da receita total da indústria de alimentos, consolidando-se como um dos principais motores do varejo alimentar e do franchising no país.",
+    "recomendacao": "Posicionando a Arcos Dorados como o principal motor de crescimento do varejo alimentar no Brasil ao lançar um whitepaper de impacto setorial, demonstrando como nossa escala operacional e a 'cooltura de serviço' impulsionam o mercado de food service e geram valor sustentável para toda a nossa rede de franqueados.",
+    "tipo": "operacao",
+    "data": "23/08/2026",
+    "setor": "Varejo Alimentar / Food Service",
+    "marcas": [
+      "ABF",
+      "Arcos Dorados"
+    ],
+    "produtos": [
+      "Op-Ed C-Level",
+      "Whitepaper de Impacto Setorial"
+    ],
+    "link_noticia": "https://www1.folha.uol.com.br/colunas/painelsa/2026/08/food-service-movimenta-r-2879-bi-no-brasil-em-2025.shtml",
+    "imagem": ""
+  },
+  {
+    "titulo": "Arcos Dorados registra receita recorde de US$ 1,3 bilhão no segundo trimestre de 2026",
+    "resumo_fato": "A Arcos Dorados divulgou seus resultados financeiros do segundo trimestre de 2026, registrando uma receita recorde de US$ 1,3 bilhão (alta de 14,3% interanual) e lucro líquido de US$ 45 milhões. O Brasil se consolidou como o maior contribuidor para a rentabilidade da companhia, com margem EBITDA ajustada expandindo 180 pontos base para 14,6%. As vendas digitais representaram aproximadamente 66% das vendas totais.",
+    "recomendacao": "Consolidando nossa liderança absoluta de mercado ao publicar um Op-Ed C-Level focado na nossa transição digital e financeira, evidenciando que o recorde de receita de US$ 1,3 bilhão e a marca de 66% de vendas digitais estão diretamente conectados à nossa estratégia de eficiência operacional e à emissão de Sustainability Linked Bonds.",
+    "tipo": "inovacao",
+    "data": "23/08/2026",
+    "setor": "Finanças / Negócios",
+    "marcas": [
+      "Arcos Dorados",
+      "McDonald's"
+    ],
+    "produtos": [
+      "Op-Ed C-Level",
+      "Whitepaper de Impacto Setorial",
+      "Painel Exclusivo para Stakeholders e Investidores"
+    ],
+    "link_noticia": "https://es.investing.com/news/stock-market-news/arcos-dorados-sube-un-7-tras-superar-previsiones-en-el-segundo-trimestre-2748392",
+    "imagem": ""
+  },
+  {
+    "titulo": "Reforma Tributária traz regime específico e redução de 40% nas alíquotas para bares e restaurantes",
+    "resumo_fato": "A regulamentação da Reforma Tributária (Lei Complementar nº 214/2025) estabeleceu um regime específico para o setor de alimentação fora do lar, concedendo uma redução de 40% nas alíquotas de IBS e CBS sobre o fornecimento de alimentos e bebidas não alcoólicas preparados no próprio estabelecimento. A mudança exige segregação obrigatória na nota fiscal e exclui bebidas alcoólicas e industrializadas da redução.",
+    "recomendacao": "Protegendo a rentabilidade dos nossos franqueados e o Same Store Sales na ponta ao desenvolver um toolkit estratégico de transição fiscal, oferecendo suporte técnico contínuo para a segregação contábil correta exigida pela nova lei complementar, mitigando os impactos do Split Payment no fluxo de caixa das operações.",
+    "tipo": "franqueados",
+    "data": "23/08/2026",
+    "setor": "Legislação / Tributário",
+    "marcas": [
+      "Ministério da Fazenda",
+      "Arcos Dorados"
+    ],
+    "produtos": [
+      "Toolkit Estratégico para Franqueados",
+      "Positioning Paper sobre Transição Fiscal"
+    ],
+    "link_noticia": "https://www.foodconnection.com.br/gestao/como-se-preparar-para-a-reforma-tributaria-nos-restaurantes",
+    "imagem": ""
+  },
+  {
+    "titulo": "Anvisa alerta para fim do prazo de adequação às regras de regularização de alimentos",
+    "resumo_fato": "A Agência Nacional de Vigilância Sanitária (Anvisa) emitiu um alerta lembrando que no dia 1º de setembro de 2026 encerra-se o prazo de transição da RDC 843/2024. As empresas do setor de alimentos devem solicitar a adequação de produtos registrados e notificar suplementos alimentares e alimentos para controle de peso. O descumprimento do prazo resultará no cancelamento do registro dos produtos.",
+    "recomendacao": "Garantindo a conformidade regulatória e a transparência inegociável com o consumidor ao estruturar um comitê interno de auditoria de rotulagem, ativando um infográfico de defesa reativa e promovendo o programa 'Portas Abertas' para que os clientes atestem presencialmente a qualidade e a conformidade dos nossos insumos preparados na hora.",
+    "tipo": "regulacao",
+    "data": "23/08/2026",
+    "setor": "Regulação / Vigilância Sanitária",
+    "marcas": [
+      "Anvisa",
+      "McDonald's"
+    ],
+    "produtos": [
+      "Infográfico de Defesa Reativa Issue Management",
+      "Dossiê de Conformidade Regulatória"
+    ],
+    "link_noticia": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/anvisa-alerta-para-prazo-de-adequacao-as-regras-de-regularizacao-de-alimentos",
+    "imagem": ""
+  },
+  {
     "titulo": "Pesquisa revela paradoxo dos jovens brasileiros com tecnologia e barreiras no mercado de trabalho",
     "resumo_fato": "O estudo 'Juventudes e o Mundo do Trabalho', realizado pela Fundação Itaú com apoio do Datafolha, aponta que os jovens de 16 a 29 anos enxergam a tecnologia simultaneamente como ameaça e oportunidade. Além disso, 55% apontam a falta de experiência prática como a principal barreira para inserção no mercado formal.",
     "recomendacao": "Lançando uma série de conteúdos proprietários e episódios especiais no podcast 'Amplie seu Potencial' focados em capacitação prática e letramento digital para a Geração Z, posicionando a Arcos Dorados como a maior geradora de primeiro emprego do país e uma aliada no desenvolvimento de competências socioemocionais e tecnológicas.",
@@ -805,165 +959,5 @@
     ],
     "link_noticia": "https://gkpb.com.br/noticias/mcdonalds-brasil-lanca-mini-crocs-colecionaveis-no-mclanche-feliz/",
     "imagem": "https://gkpb.com.br/wp-content/uploads/2026/08/crocs-mcdonalds-mclanche-feliz-1.jpg"
-  },
-  {
-    "titulo": "Alertas de desmatamento na Amazônia caem 36,8% e atingem menor patamar histórico em 2026",
-    "resumo_fato": "Dados do sistema Deter do Inpe apontam que os alertas de desmatamento na Amazônia caíram 36,87% entre agosto de 2025 e julho de 2026, registrando o menor valor da série histórica. O Cerrado também registrou queda de 7,8%.",
-    "recomendacao": "Estruturandoum ecossistema de comunicação corporativa que posicione a Arcos Dorados como pioneira na preservação ambiental, demonstrando que a queda histórica do desmatamento nacional reflete as práticas rigorosas de nossa Política de Compra de Carne Bovina Livre de Desmatamento (monitorada via Agrotools) e o rastreio de nossos seis ingredientes estratégicos, gerando valor reputacional inquestionável para a marca e blindando o Same Store Sales contra boicotes ideológicos.",
-    "tipo": "esg",
-    "data": "08/08/2026",
-    "setor": "Meio Ambiente / Agronegócio",
-    "marcas": [
-      "Arcos Dorados",
-      "Marfrig",
-      "Agrotools"
-    ],
-    "produtos": [
-      "Dossiê de Rastreabilidade",
-      "Press Tour Executivo B2B focado na editoria de Agro/Economia",
-      "Positioning Paper"
-    ],
-    "link_noticia": "https://www.gov.br/mma/pt-br/noticias/dados-do-deter-indicam-reducao-dos-alertas-de-desmatamento-na-amazonia-e-no-cerrado-no-intervalo-de-2025-2026",
-    "imagem": "https://pbs.twimg.com/media/HPXdh_WXMAArpC9.jpg"
-  },
-  {
-    "titulo": "McDonald's traz batalha global de K-Pop ao Brasil com ativação na Méqui 1000",
-    "resumo_fato": "O McDonald's lançou uma campanha global inspirada no universo do K-Pop, trazendo menus temáticos e cards colecionáveis dos grupos HUNTR/X e Saja Boys, além de transformar a icônica unidade Méqui 1000, na Avenida Paulista, em um espaço temático.",
-    "recomendacao": "Consolidando a liderança cultural do McDonald's no território jovem e geek através de uma experiência imersiva de brand experience na Méqui 1000, gerando buzz orgânico e impulsionando o Same Store Sales por meio de ativações físicas e digitais integradas que celebram a 'cooltura de serviço' e a hospitalidade da marca.",
-    "tipo": "inovacao",
-    "data": "07/08/2026",
-    "setor": "QSR (Quick Service Restaurants)",
-    "marcas": [
-      "McDonald's"
-    ],
-    "produtos": [
-      "Imersão Exclusiva de Influenciadores (Fact-Finding Tour)",
-      "Série de Mini-Docs Proprietários"
-    ],
-    "link_noticia": "https://www.meioemensagem.com.br/comunicacao/mcdonalds-traz-batalha-de-k-pop-ao-publico-brasileiro",
-    "imagem": "https://nerdizmo.ig.com.br/wp-content/uploads/2026/04/Guerreiras-do-KPop-no-McDonalds-Capa-1170x508.jpg"
-  },
-  {
-    "titulo": "McDonald's inaugura novo quiosque de sobremesas no Aeroporto de Fortaleza",
-    "resumo_fato": "O McDonald's inaugurou um novo quiosque de sobremesas na sala de embarque doméstico do Aeroporto de Fortaleza, operado pela Fraport Brasil. A nova unidade visa oferecer maior conveniência e diversificar o mix de alimentação para os passageiros em trânsito.",
-    "recomendacao": "Alavancando a capilaridade e a conveniência do modelo de franquias da Arcos Dorados ao promover a expansão de novos formatos de pontos de venda em locais de alto fluxo (como aeroportos), reforçando a nossa 'Cooltura de Serviço' e hospitalidade para gerar valor imediato na ponta e impulsionar o Same Store Sales dos franqueados regionais.",
-    "tipo": "operacao",
-    "data": "07/08/2026",
-    "setor": "Expansão / Varejo",
-    "marcas": [
-      "McDonald's",
-      "Arcos Dorados",
-      "Fraport Brasil"
-    ],
-    "produtos": [
-      "Toolkit Estratégico para Franqueados"
-    ],
-    "link_noticia": "https://www.fortaleza-airport.com.br/pt/noticias/mcdonalds-abre-novo-quiosque-de-sobremesas-no-aeroporto-de-fortaleza",
-    "imagem": "https://fortaleza-airport.com.br/_next/image?url=https%3A%2F%2Fapi-site.fraport-brasil.com%2Fassets%2Fcms%2Fc8d9fa02-183b-4c67-8dc3-7e7351a843ea.webp&w=1920&q=75"
-  },
-  {
-    "titulo": "Zamp estuda fechar capital (OPA) após registrar prejuízo líquido de R$ 108,9 milhões no 1T26",
-    "resumo_fato": "O fundo Mubadala Capital estuda realizar uma Oferta Pública de Aquisição (OPA) para fechar o capital da Zamp (operadora do Burger King, Popeyes, Starbucks e Subway no Brasil). A decisão ocorre em meio a preocupações do mercado com a rentabilidade da companhia, que reportou prejuízo de R$ 108,9 milhões no primeiro trimestre de 2026.",
-    "recomendacao": "Consolidando o posicionamento de solidez financeira, governança corporativa e expansão sustentável da Arcos Dorados no Brasil (com destaque para o plano de abertura de 105 a 115 novos restaurantes na América Latina em 2026, liderado pelo Brasil), contrastando de forma sutil com a instabilidade financeira e reestruturações societárias da concorrência para tranquilizar investidores e proteger o Same Store Sales dos nossos franqueados.",
-    "tipo": "franqueados",
-    "data": "07/08/2026",
-    "setor": "Finanças / Mercado de Capitais",
-    "marcas": [
-      "ZAMP",
-      "Burger King",
-      "Arcos Dorados",
-      "Mubadala Capital"
-    ],
-    "produtos": [
-      "Whitepaper de Impacto Setorial",
-      "Toolkit Estratégico para Franqueados"
-    ],
-    "link_noticia": "https://www.bloomberglinea.com.br/negocios/zamp-confirma-que-estuda-opa-para-fechar-o-capital-e-acao-cai-7-em-reacao/",
-    "imagem": ""
-  },
-  {
-    "titulo": "União Europeia bloqueia compras de carne brasileira até 2028 por exigências sanitárias",
-    "resumo_fato": "A União Europeia anunciou a manutenção de restrições às importações de carne bovina e de frango do Brasil até setembro de 2028, alegando falta de comprovação de conformidade sanitária no uso de antimicrobianos. A medida impactou as ações de grandes frigoríficos brasileiros como JBS, Marfrig e Minerva.",
-    "recomendacao": "Blindando a reputação da Arcos Dorados e a confiança do consumidor brasileiro diante da crise de exportação de carne bovina, reafirmando de forma reativa e transparente que 100% da nossa carne é de origem controlada, livre de desmatamento e monitorada rigorosamente em parceria com fornecedores homologados (como a Marfrig), garantindo o cumprimento de todas as normas regulatórias do MAPA e da Anvisa.",
-    "tipo": "regulacao",
-    "data": "07/08/2026",
-    "setor": "Agronegócio / Regulatório",
-    "marcas": [
-      "Arcos Dorados",
-      "McDonald's",
-      "MAPA",
-      "Marfrig",
-      "JBS",
-      "Minerva Foods"
-    ],
-    "produtos": [
-      "Dossiê de Rastreabilidade",
-      "Positioning Paper",
-      "Infográfico de Defesa Reativa"
-    ],
-    "link_noticia": "https://www.agrimidia.com.br/pecuaria/uniao-europeia-bloqueia-compras-de-carne-brasileira-ate-2028/",
-    "imagem": "https://paraibabusiness.com.br/atual/wp-content/uploads/2026/08/373505a245515b10f8a04a4fa8631050.webp"
-  },
-  {
-    "titulo": "ZAMP abre inscrições para Programa de Estágio 2027 com foco em aceleração de carreira",
-    "resumo_fato": "A ZAMP, operadora das marcas Burger King, Popeyes, Subway e Starbucks no Brasil, abriu inscrições para seu Programa de Estágio 2027 corporativo, sob o posicionamento de marca empregadora 'Pra quem quer crescer com gosto'.",
-    "recomendacao": "Neutralizando a narrativa de marca empregadora da concorrência ao evidenciar nossa liderança absoluta na geração de primeiro emprego e desenvolvimento de carreira, destacando nossas certificações de diversidade (como HRC Equidade BR e GPTW LGBTQIA+) e o alcance do nosso programa de capacitação MCampus Comunidade, que oferece cursos gratuitos para fortalecer habilidades profissionais de jovens em todo o país.",
-    "tipo": "concorrencia",
-    "data": "07/08/2026",
-    "setor": "Recursos Humanos / Concorrência",
-    "marcas": [
-      "ZAMP",
-      "Burger King",
-      "Arcos Dorados",
-      "McDonald's"
-    ],
-    "produtos": [
-      "Manifesto de Liderança Inclusiva",
-      "Fórum Proprietário Future of Work Latam"
-    ],
-    "link_noticia": "https://www.jwnews.com.br/com-proposta-de-aceleracao-de-carreira-zamp-abre-programa-de-estagio-2027",
-    "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_OPVnFtaPooZjGM_zj0VTGIAh9W1W3YkntvIEFoHitdP5-kF_2fxRTVU&s=10"
-  },
-  {
-    "titulo": "Arcos Dorados apresenta Relatório de Impacto Social 2025 focado em Emprego Jovem",
-    "resumo_fato": "A Arcos Dorados divulgou seu Relatório de Impacto Social e Desenvolvimento Sustentável 2025, destacando sua atuação como a principal porta de entrada para o primeiro emprego formal de jovens na América Latina. Somente no Brasil, a companhia gerou mais de 274 mil oportunidades de trabalho formal para o público jovem.",
-    "recomendacao": "Capitalizando a força da marca como maior geradora de primeiro emprego no Brasil por meio da divulgação estratégica dos dados do Relatório de Impacto Social 2025 (com mais de 274 mil oportunidades geradas no país), pautando o debate público sobre empregabilidade juvenil e inclusão para blindar a marca empregadora e atrair talentos da Geração Z.",
-    "tipo": "esg",
-    "data": "07/08/2026",
-    "setor": "Recursos Humanos / ESG",
-    "marcas": [
-      "Arcos Dorados",
-      "McDonald's"
-    ],
-    "produtos": [
-      "Manifesto de Liderança Inclusiva",
-      "Fórum Proprietário Future of Work Latam",
-      "Artigos de Opinião via CHRO"
-    ],
-    "link_noticia": "https://www.arcosdorados.com/pt/noticias/arcos-dorados-se-consolida-como-ponte-para-o-primeiro-emprego-formal-para-jovens/",
-    "imagem": "https://ddhnb9vx8lz57.cloudfront.net/wp-content/uploads/sites/2/2026/07/30121242/Reporte.jpg"
-  },
-  {
-    "titulo": "Arcos Dorados debate conservação do Pantanal e Cerrado na São Paulo Climate Week 2026",
-    "resumo_fato": "Durante a São Paulo Climate Week 2026, a Arcos Dorados reuniu lideranças empresariais e do terceiro setor (como WWF-Brasil, MBRF/Marfrig, Instituto AEGEA e CEBDS) no restaurante McDonald's mais sustentável da América Latina, em São Paulo, para debater soluções de pecuária sustentável e a Aliança pelas Cabeceiras do Pantanal.",
-    "recomendacao": "Posicionando a liderança da Arcos Dorados em transição climática e sustentabilidade ao amplificar os debates do painel realizado na São Paulo Climate Week, demonstrando como a nossa Política de Compra de Carne Bovina Livre de Desmatamento (monitorada via Agrotools) e a parceria com a Aliança pelas Cabeceiras do Pantanal geram impacto socioambiental real, blindando a reputação corporativa frente a crises ambientais e fortalecendo o relacionamento com investidores B2B.",
-    "tipo": "esg",
-    "data": "07/08/2026",
-    "setor": "Sustentabilidade / ESG",
-    "marcas": [
-      "Arcos Dorados",
-      "WWF-Brasil",
-      "MBRF",
-      "Marfrig",
-      "CEBDS",
-      "Instituto AEGEA"
-    ],
-    "produtos": [
-      "Whitepaper de Impacto Setorial",
-      "Dossiê de Rastreabilidade",
-      "Positioning Paper"
-    ],
-    "link_noticia": "https://www.arcosdorados.com/pt/noticias/arcos-dorados-e-parceiros-solucoes-de-conservacao-para-o-pantanal-e-o-cerrado-na-sao-paulo-climate-week-2026",
-    "imagem": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1200,height=630/uploads/641cd6af95-63b2-4187-add0-d5fa9bdcd3d7.jpg"
   }
 ]
