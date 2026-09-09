@@ -143,7 +143,7 @@ def executar_varredura():
             textos_recentes.append(texto_novo)
             pautas_adicionadas += 1
 
-   with open("oportunidades.json", "w", encoding="utf-8") as f:
+    with open("oportunidades.json", "w", encoding="utf-8") as f:
         json.dump(pautas_existentes, f, ensure_ascii=False, indent=2)
 
     print(f"Sucesso! Varredura web concluída. {pautas_adicionadas} novas pautas exclusivas adicionadas.")
