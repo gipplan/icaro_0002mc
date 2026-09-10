@@ -1,5 +1,132 @@
 [
   {
+    "titulo": "MBRF lança seu primeiro Relatório Integrado e consolida avanços na agenda de Sustentabilidade",
+    "resumo_fato": "A MBRF, companhia resultante da fusão entre Marfrig e BRF (um dos principais fornecedores da Arcos Dorados), lançou seu primeiro Relatório Integrado em 2026, destacando o alcance de 100% de monitoramento de desmatamento em suas cadeias de bovinos e grãos, além de metas climáticas validadas pela SBTi.",
+    "recomendacao": "Executando um advocacy invisível de cadeia de suprimentos sustentável, publicando um posicionamento corporativo (positioning paper) em parceria com a MBRF (Marfrig) para evidenciar que 100% da carne bovina fornecida ao McDonald's é livre de desmatamento e monitorada via Agrotools, consolidando nossa liderança em transição climática no agronegócio.",
+    "tipo": "esg",
+    "data": "29/05/2026",
+    "setor": "Agronegócio / Radar Digital Brasília",
+    "marcas": [
+      "MBRF",
+      "Marfrig",
+      "BRF"
+    ],
+    "produtos": [
+      "Dossiê de Rastreabilidade",
+      "Positioning Paper"
+    ],
+    "link_noticia": "https://radardigitalbrasilia.com.br/mbrf-lanca-primeiro-relatorio-integrado-e-reforca-lideranca-global-em-sustentabilidade-e-alimentos/",
+    "imagem": ""
+  },
+  {
+    "titulo": "Dona do Burger King corta prejuízo, mas dívida líquida vai a R$ 1,2 bi no segundo trimestre de 2026",
+    "resumo_fato": "A Zamp, operadora das marcas Burger King, Popeyes, Starbucks e Subway no Brasil, reportou seus resultados financeiros do segundo trimestre de 2026, reduzindo seu prejuízo líquido sem IFRS 16 de R$ 69,9 milhões para R$ 44,8 milhões, mas registrando uma dívida líquida de R$ 1,2 bilhão.",
+    "recomendacao": "Neutralizando narrativas de instabilidade no setor de QSR ao posicionar a solidez financeira da Arcos Dorados, promovendo um painel exclusivo para stakeholders e investidores para apresentar nossos resultados de crescimento digital e margens robustas no Brasil, reforçando a segurança do nosso modelo de negócios.",
+    "tipo": "crise",
+    "data": "07/08/2026",
+    "setor": "Finanças / UOL Economia",
+    "marcas": [
+      "Zamp",
+      "Burger King"
+    ],
+    "produtos": [
+      "Painel Exclusivo para Stakeholders e Investidores",
+      "Whitepaper de Impacto Setorial"
+    ],
+    "link_noticia": "https://economia.uol.com.br/noticias/redacao/2026/08/07/dona-do-burger-king-corta-prejuizo-mas-divida-liquida-vai-a-r-12-bi.htm",
+    "imagem": ""
+  },
+  {
+    "titulo": "Confirmada instalação do McDonald's em Canela com previsão de abertura para o segundo semestre de 2026",
+    "resumo_fato": "O McDonald's iniciou as obras de sua primeira unidade em Canela (RS), na Serra Gaúcha, com inauguração prevista para o segundo semestre de 2026. A nova operação de 257 metros quadrados contará com drive-thru e deve gerar cerca de 50 empregos diretos na região.",
+    "recomendacao": "Valorizando o impacto socioeconômico do nosso modelo de franquias na Serra Gaúcha, distribuindo um toolkit estratégico para franqueados locais para engajar a comunidade de Canela e estruturando um press tour executivo B2B com veículos de economia para destacar a geração de 50 novos empregos diretos e o fomento ao comércio regional.",
+    "tipo": "franqueados",
+    "data": "04/06/2026",
+    "setor": "Expansão / Acontece Gramado",
+    "marcas": [
+      "McDonald's",
+      "Prefeitura de Canela"
+    ],
+    "produtos": [
+      "Toolkit Estratégico para Franqueados",
+      "Press Tour Executivo B2B"
+    ],
+    "link_noticia": "https://acontecegramado.com.br/confirmada-instalacao-do-mcdonalds-em-canela-com-previsao-de-abertura-ainda-este-ano/",
+    "imagem": ""
+  },
+  {
+    "titulo": "McDonald's lança plataforma 'CV de Vida' para apoiar empregabilidade jovem no Brasil",
+    "resumo_fato": "O McDonald's lançou a plataforma gratuita 'CV de Vida' para ajudar jovens, especialmente da Geração Z, a transformarem suas vivências cotidianas (como cuidar de familiares, organizar projetos pessoais ou comunitários) em competências profissionais para o primeiro currículo, combatendo o desemprego juvenil.",
+    "recomendacao": "Capitalizando nossa força como maior geradora de primeiro emprego no país para liderar o debate sobre inclusão corporativa, lançando um manifesto de liderança inclusiva assinado pelo nosso CHRO e promovendo o fórum proprietário 'Future of Work Latam' para destacar como a plataforma 'CV de Vida' rompe as barreiras de contratação da Geração Z.",
+    "tipo": "esg",
+    "data": "24/06/2026",
+    "setor": "Recursos Humanos / RH Pra Você",
+    "marcas": [
+      "McDonald's",
+      "Arcos Dorados"
+    ],
+    "produtos": [
+      "Manifesto de Liderança Inclusiva",
+      "Fórum Proprietário ('Future of Work Latam')"
+    ],
+    "link_noticia": "https://rhpravoce.com.br/posts/mcdonalds-lanca-cv-de-vida-e-propoe-novo-olhar-sobre-empregabilidade-jovem-no-brasil",
+    "imagem": ""
+  },
+  {
+    "titulo": "Burger King lança combo Dragon Ball com miniaturas colecionáveis no Brasil",
+    "resumo_fato": "O Burger King (Zamp) lançou em setembro de 2026 um combo especial licenciado de Dragon Ball Z, trazendo miniaturas colecionáveis dos personagens clássicos como Goku e Vegeta, visando atrair o público geek e colecionador.",
+    "recomendacao": "Mantendo nossa postura de líder de categoria que não engaja em guerrilha direta, focando a comunicação na escala e no valor do McLanche Feliz através de um infográfico de defesa reativa que evidencie nosso rigoroso controle de licenciamento seguro e a constante evolução nutricional do nosso cardápio infantil.",
+    "tipo": "concorrencia",
+    "data": "07/09/2026",
+    "setor": "Marketing / Portal Publicitário",
+    "marcas": [
+      "Burger King",
+      "Zamp"
+    ],
+    "produtos": [
+      "Infográfico de Defesa Reativa",
+      "Manifesto de Liderança Inclusiva"
+    ],
+    "link_noticia": "https://portalpublicitario.com.br/burger-king-lanca-combo-dragon-ball-com-miniaturas/",
+    "imagem": ""
+  },
+  {
+    "titulo": "Canetas emagrecedoras levam 53% das redes de food service a adaptar cardápios",
+    "resumo_fato": "A Pesquisa Anual Setorial de Food Service ABF 2025-2026, realizada pela Associação Brasileira de Franchising em parceria com a Galunion, revelou que 53% das franquias de alimentação no Brasil fizeram adaptações nos cardápios devido ao avanço do uso de medicamentos GLP-1 (canetas emagrecedoras). As mudanças incluem porções menores e opções mais saudáveis e ricas em proteínas.",
+    "recomendacao": "Posicionando a Arcos Dorados como a líder de categoria mais ágil na adaptação às demandas de wellness, estruturando um whitepaper de impacto setorial que demonstre como a nossa 'cooltura de serviço' e a flexibilidade de personalização dos combos no app atendem a esse novo perfil de consumidor saciado, sem perder a essência indulgente da marca.",
+    "tipo": "operacao",
+    "data": "31/08/2026",
+    "setor": "Franquias / Exame",
+    "marcas": [
+      "ABF",
+      "Galunion"
+    ],
+    "produtos": [
+      "Whitepaper de Impacto Setorial",
+      "Dossiê de Rastreabilidade"
+    ],
+    "link_noticia": "https://exame.com.br/negocios/canetas-emagrecedoras-estao-mudando-o-consumo-nos-restaurantes/",
+    "imagem": ""
+  },
+  {
+    "titulo": "McDonald's traz McFish de volta com versão 'deluxe' e campanha inspirada em Atlântida",
+    "resumo_fato": "O McFish retornou ao cardápio do McDonald's no Brasil em 8 de setembro de 2026, acompanhado de uma campanha épica criada pela agência Galeria chamada 'McFish e a Receita Perdida de Atlântida'. A temporada traz também o 'McFish Deluxe', que adiciona alface e tomate ao clássico sanduíche de peixe.",
+    "recomendacao": "Alavancando o retorno do McFish para modernizar a narrativa do programa 'Portas Abertas', promovendo uma imersão exclusiva de influenciadores gastronômicos e 'fish lovers' na nossa cozinha para atestar o preparo sob demanda do peixe Polaca, sem corantes ou aromas artificiais, blindando a marca contra desinformação nutricional.",
+    "tipo": "inovacao",
+    "data": "08/09/2026",
+    "setor": "Marketing / Meio & Mensagem",
+    "marcas": [
+      "McDonald's",
+      "Galeria"
+    ],
+    "produtos": [
+      "Imersão Exclusiva de Influenciadores",
+      "Série de Mini-Docs Proprietários"
+    ],
+    "link_noticia": "https://www.meioemensagem.com.br/comunicacao/mcdonalds-traz-mcfish-de-volta-com-versao-deluxe",
+    "imagem": ""
+  },
+  {
     "titulo": "Economia circular e bioeconomia dominam debates no ESG Summit Brasília 2026",
     "resumo_fato": "O ESG Summit Brasília 2026 reuniu empresas, cooperativas e órgãos governamentais para discutir a integração de políticas públicas de desenvolvimento regional com a economia circular. O painel destacou que a agenda sustentável gera inclusão social e fortalece cadeias produtivas locais.",
     "recomendacao": "Capitalizando a discussão nacional sobre economia circular para destacar nossas metas da 'Receita do Futuro', promovendo um Painel Exclusivo para Stakeholders para apresentar nossos índices de 90,5% de embalagens recicladas/renováveis, a reciclagem tecnológica de uniformes e nosso pioneirismo com Sustainability Linked Bonds.",
