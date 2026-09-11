@@ -1,5 +1,123 @@
 [
   {
+    "titulo": "McDonald's lança crossover histórico entre One Piece e Bob Esponja no McLanche Feliz",
+    "resumo_fato": "O McDonald's iniciou uma campanha global em mais de 60 países, incluindo o Brasil, trazendo uma fusão inédita de brinquedos colecionáveis que misturam os universos de One Piece e Bob Esponja no McLanche Feliz.",
+    "recomendacao": "Alavancando o enorme apelo da campanha de licenciamento para reforçar o compromisso da Arcos Dorados com a evolução nutricional constante do McLanche Feliz, demonstrando de forma reativa e transparente que a diversão vem acompanhada de rígidos padrões de qualidade, sem corantes e aromas artificiais.",
+    "tipo": "inovacao",
+    "data": "11/09/2026",
+    "setor": "Marketing & Consumo",
+    "marcas": [
+      "McDonald's",
+      "Arcos Dorados"
+    ],
+    "produtos": [
+      "Infográfico de Defesa Reativa (Issue Management)",
+      "Imersão Exclusiva de Influenciadores"
+    ],
+    "link_noticia": "https://www.merca20.com/mcdonalds-one-piece-y-bob-esponja-en-mexico-y-mas-paises-de-latinoamerica/",
+    "imagem": ""
+  },
+  {
+    "titulo": "Zamp foca na reestruturação operacional e experiência do cliente para melhorar EBITDA",
+    "resumo_fato": "O CEO da Zamp, Pedro Zemel, revelou que a empresa está focando na melhoria dos serviços básicos e na experiência do cliente nas lojas do Burger King, Popeyes, Starbucks e Subway, criando estruturas dedicadas para cada marca após os impactos de integrações e recuperações judiciais.",
+    "recomendacao": "Evidenciando a consistência e a maturidade operacional da Arcos Dorados frente às reestruturações emergenciais da concorrência, destacando nossa liderança histórica em padronização de processos, qualidade inegociável e a robustez do nosso modelo de franquias que não precisa de correções de rota para entregar excelência.",
+    "tipo": "operacao",
+    "data": "11/09/2026",
+    "setor": "Negócios / Brazil Journal",
+    "marcas": [
+      "Zamp",
+      "Burger King",
+      "Popeyes",
+      "Starbucks",
+      "Subway",
+      "Arcos Dorados"
+    ],
+    "produtos": [
+      "Whitepaper de Impacto Setorial",
+      "Dossiê de Rastreabilidade"
+    ],
+    "link_noticia": "https://braziljournal.com/a-zamp-descobriu-que-o-ebitda-mora-nos-detalhes/",
+    "imagem": ""
+  },
+  {
+    "titulo": "Programas de Jovem Aprendiz batem recorde e expandem vagas no Brasil em 2026",
+    "resumo_fato": "O mercado de trabalho juvenil no Brasil registra forte expansão em 2026, impulsionado pela consolidação das regras de aprendizagem e abertura de grandes processos seletivos por empresas de tecnologia e varejo, visando a inclusão social e o primeiro emprego.",
+    "recomendacao": "Capitalizando o debate nacional sobre empregabilidade juvenil para consolidar a Arcos Dorados como a maior geradora de primeiro emprego do Brasil, promovendo nossas certificações de diversidade (como HRC Equidade BR e GPTW LGBTQIA+) e gerando advocacy em torno da nossa marca empregadora.",
+    "tipo": "esg",
+    "data": "11/09/2026",
+    "setor": "Carreira & Empregabilidade / InfoCarreira",
+    "marcas": [
+      "Arcos Dorados",
+      "McDonald's"
+    ],
+    "produtos": [
+      "Manifesto de Liderança Inclusiva",
+      "Artigos de Opinião via CHRO"
+    ],
+    "link_noticia": "https://infocarreira.com.br/jovem-aprendiz/",
+    "imagem": ""
+  },
+  {
+    "titulo": "Redes de alimentação adaptam cardápios diante do avanço das canetas emagrecedoras no Brasil",
+    "resumo_fato": "A popularização de medicamentos à base de GLP-1 (como Ozempic) movimentou R$ 13,3 bilhões no Brasil e levou redes de alimentação, como pizzarias e pastelarias, a reformularem seus menus com foco em maior teor proteico para atender a essa nova demanda de consumo.",
+    "recomendacao": "Posicionando a Arcos Dorados na vanguarda da transparência nutricional e saudabilidade por meio da ampliação da narrativa do programa 'Portas Abertas', reforçando que nossos produtos utilizam carne 100% bovina, sem corantes ou aromas artificiais, e são preparados na hora, atendendo perfeitamente às exigências de consumidores focados em dietas de alta qualidade.",
+    "tipo": "inovacao",
+    "data": "11/09/2026",
+    "setor": "Varejo Alimentar / Folha de S.Paulo",
+    "marcas": [
+      "Arcos Dorados",
+      "McDonald's",
+      "Apubra"
+    ],
+    "produtos": [
+      "Imersão Exclusiva de Influenciadores (Fact-Finding Tour)",
+      "Série de Mini-Docs Proprietários"
+    ],
+    "link_noticia": "https://www1.folha.uol.com.br/colunas/painelsa/2026/09/redes-de-pizzas-e-pasteis-buscam-solucoes-diante-do-fenomeno-das-canetas-emagrecedoras.shtml",
+    "imagem": ""
+  },
+  {
+    "titulo": "Franquias de alimentação registram alta de 13,7% no primeiro semestre de 2026",
+    "resumo_fato": "Segundo dados da ABF, o setor de franquias faturou R$ 149 bilhões no primeiro semestre de 2026. O segmento de Alimentação - Food Service cresceu 13,7%, impulsionado pela busca por refeições práticas e expansão do delivery.",
+    "recomendacao": "Orquestrando um posicionamento estratégico de liderança setorial focado na valorização dos nossos franqueados, demonstrando como a Arcos Dorados apoia a sustentabilidade financeira e o crescimento do Same Store Sales na ponta, mesmo em um cenário de juros elevados e inflação pressionada.",
+    "tipo": "franqueados",
+    "data": "11/09/2026",
+    "setor": "Franquias / TrendsCE",
+    "marcas": [
+      "ABF",
+      "Arcos Dorados",
+      "McDonald's"
+    ],
+    "produtos": [
+      "Toolkit Estratégico para Franqueados",
+      "Fórum Proprietário"
+    ],
+    "link_noticia": "https://trendsce.com.br/2026/09/07/franquias-movimentam-r-149-bi-no-primeiro-semestre-de-2026/",
+    "imagem": ""
+  },
+  {
+    "titulo": "Zamp atinge 65,5% de receita digital com Burger King, Popeyes, Starbucks e Subway",
+    "resumo_fato": "A Zamp divulgou que as vendas digitais (totens, delivery e aplicativo) somaram R$ 867 milhões no segundo trimestre de 2026, representando 65,5% da receita dos restaurantes da companhia no Brasil, com o Burger King liderando o faturamento do grupo.",
+    "recomendacao": "Aproveitando a divulgação dos resultados digitais da concorrência para consolidar a liderança absoluta do McDonald's em escala e capilaridade digital no Brasil, destacando como nossa 'Coolture de Serviço' integra tecnologia de ponta com atendimento humanizado nos totens e no app, sem perder a essência acolhedora da marca.",
+    "tipo": "concorrencia",
+    "data": "11/09/2026",
+    "setor": "Varejo & Consumo / Mercado&Consumo",
+    "marcas": [
+      "Zamp",
+      "Burger King",
+      "Popeyes",
+      "Starbucks",
+      "Subway",
+      "McDonald's"
+    ],
+    "produtos": [
+      "Op-Ed C-Level",
+      "Whitepaper de Impacto Setorial"
+    ],
+    "link_noticia": "https://mercadoeconsumo.com.br/2026/08/10/zamp-chega-a-655-da-receita-com-vendas-digitais-de-burger-king-popeyes-starbucks-e-subway/",
+    "imagem": ""
+  },
+  {
     "titulo": "MBRF lança seu primeiro Relatório Integrado e consolida avanços na agenda de Sustentabilidade",
     "resumo_fato": "A MBRF, companhia resultante da fusão entre Marfrig e BRF (um dos principais fornecedores da Arcos Dorados), lançou seu primeiro Relatório Integrado em 2026, destacando o alcance de 100% de monitoramento de desmatamento em suas cadeias de bovinos e grãos, além de metas climáticas validadas pela SBTi.",
     "recomendacao": "Executando um advocacy invisível de cadeia de suprimentos sustentável, publicando um posicionamento corporativo (positioning paper) em parceria com a MBRF (Marfrig) para evidenciar que 100% da carne bovina fornecida ao McDonald's é livre de desmatamento e monitorada via Agrotools, consolidando nossa liderança em transição climática no agronegócio.",
